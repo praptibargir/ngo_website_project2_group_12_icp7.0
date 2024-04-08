@@ -9,11 +9,95 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
     <style>
-        .cards{
+        .cards {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            margin: 20px auto;
+            justify-content: space-evenly;
+            margin: 20px 10px;
+        }
+
+        .card {
+            box-shadow: 0 0 10px 5px #a3a3a3;
+            border: none;
+            text-align: center;
+            width: 31%;
+        }
+
+        .card-img-overlay {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card-text {
+            font-size: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 18px;
+            border: none;
+            font-weight: bolder;
+            width: 40%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width:1100px) and (min-width:700px) {
+            .cards {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                box-shadow: 0 0 10px 5px #a3a3a3;
+                border: none;
+                text-align: center;
+            }
+
+            .card {
+                margin: 10px;
+                width: 60%;
+            }
+        }
+
+        @media screen and (max-width:700px) and (min-width:460px) {
+            .cards {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                box-shadow: 0 0 10px 5px #a3a3a3;
+                border: none;
+                text-align: center;
+            }
+
+            .card {
+                margin: 10px;
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width:460px) {
+            .cards {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .card {
+                margin: 10px;
+                width: 98%;
+            }
+
+            .card-text {
+                font-size: 10px;
+            }
+
+            .button {
+                font-size: 10px;
+            }
         }
     </style>
 </head>
@@ -64,25 +148,27 @@
     <!--Main Slider-->
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2000">
-            <img src="images/slider1.png" class="w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="images/slider2.png" class="w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="images/slider3.png" class="w-100" alt="...">
-          </div>
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="images/slider1.png" class="w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/slider2.png" class="w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/slider3.png" class="w-100" alt="...">
+            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
-      </div>
+    </div>
     <!--Main slider end-->
 
     <!--cards-->
@@ -90,25 +176,33 @@
         <div class="card text-bg-dark">
             <img src="images/bgcard1.jpg" class="card-img" alt="...">
             <div class="card-img-overlay">
-              <h3 class="card-title">Card title</h3>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                <h3 class="card-title">Donate Us</h3>
+                <p class="card-text">We are on a mission to create positive change and impact lives. We need your
+                    monthly support!
+                </p>
+                <button type="button" class="button">Donate Now</button>
             </div>
-          </div><div class="card text-bg-dark">
+        </div>
+        <div class="card text-bg-dark">
             <img src="images/bgcard2.jpg" class="card-img" alt="...">
             <div class="card-img-overlay">
-              <h3 class="card-title">Card title</h3>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                <h3 class="card-title">Our Works</h3>
+                <p class="card-text">Your presence at our events is a crucial step towards creating a positive impact.
+                    Let's come together!
+                </p>
+                <button type="button" class="button">See More</button>
             </div>
-          </div><div class="card text-bg-dark">
+        </div>
+        <div class="card text-bg-dark">
             <img src="images/bgcard3.jpg" class="card-img" alt="...">
             <div class="card-img-overlay">
-              <h3 class="card-title">Card title</h3>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                <h3 class="card-title">Become a Volunteer</h3>
+                <p class="card-text">Your time, skills, and passion can contribute to positive change. Together, let's
+                    build a better future!
+                </p>
+                <button type="button" class="button">Join Us</button>
             </div>
-          </div>
+        </div>
     </div>
     <!--cards end-->
 
@@ -119,12 +213,16 @@
                 <img class="d-block" src="icon/logo-rectangle.PNG" />
                 <p class="pt-3">Get in Touch with us:</p>
                 <div>
-                    <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fs-2 p-2 pt-0" style="color: #ffffff;"></i></a>
+                    <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fs-2 p-2 pt-0"
+                            style="color: #ffffff;"></i></a>
                     <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fs-2 p-2 pt-0"
                             style="color: #ffffff;"></i></a>
-                    <a href="https://www.instagram.com/roadtocode4u/"><i class="fa-brands fa-instagram fs-2 p-2 pt-0" style="color: #ffffff;"></i></a>
-                    <a href="https://twitter.com/roadtocode4u"><i class="fa-brands fa-x-twitter fs-2 p-2 pt-0" style="color: #ffffff;"></i></a>
-                    <a href="mailto:suraj@roadtocode.org"><i class="fa-regular fa-envelope fs-2 p-2 pt-0" style="color: #ffffff;"></i></a>
+                    <a href="https://www.instagram.com/roadtocode4u/"><i class="fa-brands fa-instagram fs-2 p-2 pt-0"
+                            style="color: #ffffff;"></i></a>
+                    <a href="https://twitter.com/roadtocode4u"><i class="fa-brands fa-x-twitter fs-2 p-2 pt-0"
+                            style="color: #ffffff;"></i></a>
+                    <a href="mailto:suraj@roadtocode.org"><i class="fa-regular fa-envelope fs-2 p-2 pt-0"
+                            style="color: #ffffff;"></i></a>
                 </div>
             </div>
             <div class="col-lg-4 my-auto">
@@ -155,8 +253,8 @@
                 <br />
                 <a href="tel:7821011976" class="text-decoration-none text-light "><i class="fa-solid fa-phone"
                         style="color: #ffffff;"></i> +91 78210 11976</a><br />
-                <a href="mailto:suraj@roadtocode.org" class="text-decoration-none text-light"><i class="fa-solid fa-envelope"
-                        style="color: #ffffff;"></i>
+                <a href="mailto:suraj@roadtocode.org" class="text-decoration-none text-light"><i
+                        class="fa-solid fa-envelope" style="color: #ffffff;"></i>
                     suraj@roadtocode.org</a>
             </div>
         </div>
