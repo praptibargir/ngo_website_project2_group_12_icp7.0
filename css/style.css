@@ -7,3 +7,28 @@ body{
     height:60px;
     margin: 2px 1px;
 }
+
+.colour-red{
+    color:#e91348;
+}
+
+.colour-orange{
+    color: #f1471d;
+}
+
+.colour-purple{
+    color: #7f248d;
+}
+
+.colour-blue{
+    color: #1082ce;
+}
+
+.colour-green{
+    color:#40b93c;
+}
+
+.colour-yellow{
+    color: #fbc108;
+}
+
