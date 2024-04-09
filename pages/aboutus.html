@@ -63,13 +63,38 @@
                     <h2>About Us</h2>
                 </div>
                 <div class="col-12">
-                    <a href="">Home</a>
-                    <a href="">About Us</a>
+                    <a href="../index.html">Home</a>
+                    <a href="aboutus.html">About Us</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Page Header End -->
+
+     <!-- About Start -->
+     <div class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img" data-parallax="scroll" data-image-src="img/about.jpg"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-header">
+                        <p>Learn About Us</p>
+                        <h2>Worldwide non-profit charity organization</h2>
+                    </div>
+                    <div class="about-tab">
+                        <button type="button" class="btn btn-outline-danger" onclick="about()">About</button>
+                        <button type="button" class="btn btn-outline-warning" onclick="mission()">Mission</button>
+                        <button type="button" class="btn btn-outline-success" onclick="vision()">Vision</button>
+                    </div>
+
+                    <p> <span id="tab-content"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
 
     <!-- Team Start -->
     <div>
@@ -83,7 +108,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="../images/about-img/prapti.jpg" alt="Team Image">
+                                <img src="../images/about/prapti.jpg" alt="Team Image">
                             </div>
                             <div class="team-text">
                                 <h2> Prapti </h2>
@@ -100,7 +125,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="../images/about-img/yash1.png" alt="Team Image">
+                                <img src="../images/about/yash1.png" alt="Team Image">
                             </div>
                             <div class="team-text">
                                 <h2>Yash</h2>
@@ -117,7 +142,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="../images/about-img/darshika1.jpg" alt="Team Image">
+                                <img src="../images/about/darshika1.jpg" alt="Team Image">
                             </div>
                             <div class="team-text">
                                 <h2>Darshika Agrawal</h2>
@@ -134,7 +159,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="../images/about-img/darshika1.jpg" alt="Team Image">
+                                <img src="../images/about/aditi.jpg" alt="Team Image">
                             </div>
                             <div class="team-text">
                                 <h2> Aditi Kundnani </h2>
@@ -218,5 +243,19 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/14a1a7dd00.js" crossorigin="anonymous"></script>
+<script>
+    function about() {
+        const element = document.getElementById("tab-content");
+        element.innerText = "NGOs are private agencies that can support development at local, national and international level by organising indigenous groups. NGOs as citizen groups raise awareness and influence policies and include independent cooperatives, community associations, societies, groups and various other associations."
+    }
+    function mission() {
+        const element = document.getElementById("tab-content")
+        element.innerText = "  The Foundation for Social Change and Inclusion works for the social development and integration of underprivileged individuals, groups and communities in Bulgaria."
+    }
+    function vision() {
+        const element = document.getElementById("tab-content")
+        element.innerText = "  Our work aims to break the vicious cycle of poverty and social isolation and to restore hope for a better future. We believe that every person has the right to access resources and opportunities in order to live and develop with dignity and to become an active and contributing member of our society."
+    }
+</script>
 
 </html>
