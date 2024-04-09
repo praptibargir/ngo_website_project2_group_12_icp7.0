@@ -122,13 +122,14 @@
     font-size: 22px;
     font-weight: 600;
     text-transform: capitalize;
-    color: #FDBE33;
+    color: #7f248d;
 }
 
 .section-header h2 {
     margin: 0;
     font-size: 45px;
     font-weight: 700;
+    color: #1082ce;
 }
 
 @media (max-width: 991.98px) {
@@ -147,4 +148,17 @@
     .section-header h2 {
         font-size: 35px;
     }
+}
+
+/*******************************/
+/******* Supporters CSS ********/
+/*******************************/
+.thumbnail {
+    border-radius: 20px;
+    width: 600px;
+    height: 250px;
+}
+
+.text-dim {
+    color: #aaaaaa;
 }
