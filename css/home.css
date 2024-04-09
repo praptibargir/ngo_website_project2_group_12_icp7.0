@@ -1,9 +1,21 @@
 .theme {
-    margin: 1px;
+    margin-left: 10px;
 }
 
 .theme-img {
     height: 30px;
+    background-color: white;
+    padding: 0.5px;
+    border-radius: 50%;
+}
+
+.theme-light{
+    background-color: white;
+}
+
+.theme-dark{
+    background-color: black;
+    color: white;
 }
 
 .cards {
@@ -101,4 +113,15 @@
 .work-img{
     height: 80px;
     width: 80px;
+}
+
+.counter {
+    position: relative;
+    padding: 100px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/home/counter.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
