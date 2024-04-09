@@ -1,3 +1,10 @@
+.theme{
+    margin: 1px;
+}
+.theme-img{
+    height: 50px;
+}
+
 .cards {
     display: flex;
     flex-direction: row;

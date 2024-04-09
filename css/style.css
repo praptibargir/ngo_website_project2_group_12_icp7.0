@@ -33,7 +33,7 @@ body{
 }
 
 .section-colour{
-    background-color: #eef5f9;
+    background-color: #d3e7f3;
 }
 
 /*******************************/
@@ -127,5 +127,6 @@ body{
 
 
 
-
-
+li:hover{
+    color: #fbc108;
+}
