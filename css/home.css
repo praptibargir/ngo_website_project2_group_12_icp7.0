@@ -1,0 +1,90 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px 10px;
+}
+
+.card {
+    box-shadow: 0 0 10px 5px #a3a3a3;
+    border: none;
+    text-align: center;
+    width: 31%;
+}
+
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-text {
+    font-size: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    border: none;
+    font-weight: bolder;
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1100px) and (min-width:700px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0 0 10px 5px #a3a3a3;
+        border: none;
+        text-align: center;
+    }
+
+    .card {
+        margin: 10px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:700px) and (min-width:460px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0 0 10px 5px #a3a3a3;
+        border: none;
+        text-align: center;
+    }
+
+    .card {
+        margin: 10px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .card {
+        margin: 10px;
+        width: 98%;
+    }
+
+    .card-text {
+        font-size: 10px;
+    }
+
+    .button {
+        font-size: 10px;
+    }
+}
