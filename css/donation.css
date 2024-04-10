@@ -198,16 +198,16 @@
 }
 
 .box-big {
-    background-color: #f8f9fa; /* Background color */
-    padding: 40px; /* Adjust padding as needed */
-    margin: 20px auto; /* Center box horizontally with margin from top and bottom */
-    width: 80%; /* Set width to 70% of the screen */
-    max-width: 1800px; /* Set maximum width */
+    background-color: #f8f9fa;
+    padding: 40px; 
+    margin: 20px auto; 
+    width: 80%; 
+    max-width: 1800px; 
     border: 2px solid #fbc108;
 }
 
 .box-big .box-big-content {
-    margin: 0 auto; /* Center content horizontally */
+    margin: 0 auto; 
 }
 
 .box-big-content h2{
