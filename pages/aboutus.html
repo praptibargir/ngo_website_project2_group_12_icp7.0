@@ -7,7 +7,10 @@
     <title>Unity Uplift</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <script src="../js/about.js"></script>
+
 </head>
 
 <body>
@@ -52,8 +55,323 @@
         </div>
     </nav>
     <!--End of header-->
+
+    <!-- Page Header Start -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>About Us</h2>
+                </div>
+                <div class="col-12">
+                    <a href="../index.html">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+     <!-- About Start -->
+     <div class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img" data-parallax="scroll" data-image-src="img/about.jpg"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-header">
+                        <p class="fs-1">Learn About Us</p>
+                        <h2 class="fs-3">Worldwide non-profit charity organization</h2>
+                    </div>
+                    <div class="about-tab">
+                        <button type="button" class="btn btn-outline-danger" onclick="about()">About</button>
+                        <button type="button" class="btn btn-outline-warning" onclick="mission()">Mission</button>
+                        <button type="button" class="btn btn-outline-success" onclick="vision()">Vision</button>
+                    </div>
+
+                    <p> <span id="tab-content"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+     <!-- Supporters Says-->
+     <div >
+        <h1 class="text-center fs-1 colour-purple">Testimonials</h1>
+        <h2 class="fs-3 text-center colour-blue mb-3">What our supporters say?</h2>
+        <div class="container d-flex justify-content-around ">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 ">
+                    <div class="video-cart text-light rounded ">
+                        <video controls class="img-fluid m-1 thumbnail"
+                            poster="../images/about/download (4).jpeg">
+                            <source
+                                src="../images/about/6740283-hd_1920_1080_30fps.mp4"
+                                type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="video-cart text-light">
+                        <video controls class="img-fluid m-1 thumbnail" poster="../images/about/download (5).jpeg">
+                            <source
+                                src="../images/about/6893741-hd_1920_1080_25fps.mp4"
+                                type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="video-cart text-light">
+                        <video controls class="img-fluid m-1 thumbnail" poster="../images/about/images.jpeg">
+                            <source
+                                src="../images/about/6893774-hd_1920_1080_25fps.mp4"
+                                type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Supporters Says-->
+
+    <!--testinominal start-->
+    <section id="customer-reviews">
+        <h1 class="text-center fs-1 colour-purple">Recommendation</h1>        
+        <h2 class="fs-3 text-center colour-blue mb-3">Success Stories</h2>
+        <div class="user-container">
+            <div class="user-card">
+                <img src="https://i.pravatar.cc/100?img=1" class="user-profile">
+                <p class="user-name">Joana B </p>
+                <p class="user-name-email">@joanaB01@gmail.com</p>
+                <p class="review-text">
+                    Very good supplement for beginners in pocket friendly price and also brings good results.
+                    <br> <br>
+                <p class="small-txt">Oct 8, 2022</p>
+                <div class="rating-star">
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                </div>
+            </div>
+
+            <div class="user-card">
+                <img src="https://i.pravatar.cc/100?img=2" class="user-profile">
+                <p class="user-name">Fabius Roberta</p>
+                <p class="user-name-email">@fabiusroberta03@gmail.com</p>
+                <p class="review-text">
+                    Women's Lean Whey - purchased for my sister, she is loving the taste and she is now feeling more
+                    energetic.
+                    <br> <br>
+                <p class="small-txt"> Jul 30, 2022</p>
+
+                <div class="rating-star">
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                </div>
+
+            </div>
+            <div class="user-card">
+                <img src="https://i.pravatar.cc/100?img=3" class="user-profile">
+                <p class="user-name">Eder Simona</p>
+                <p class="user-name-email">@edersimona04@gmail.com</p>
+                <p class="review-text">
+                    The product is good if you are a first timer and looking for something within a budget.
+                    <br> <br>
+                <p class="small-txt">May 17, 2022</p>
+
+                <div class="rating-star">
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                </div>
+            </div>
+
+            <div class="user-card">
+                <img src="https://i.pravatar.cc/100?img=7" class="user-profile">
+                <p class="user-name">Franciska Darrin</p>
+                <p class="user-name-email">@franciskadarrin05.com</p>
+                <p class="review-text">
+                    Platinum Whey Protein Isolate - The protein powder has excellent solubility and Effectiveness is
+                    great.
+
+                    <br> <br>
+                <p class="small-txt"> Mar 15, 2022</p>
+
+                <div class="rating-star">
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                    <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--testinominal end-->
+    <!-- Team Start -->
+        <div class="team">
+            <div class="container ">
+                <div class="section-header text-center">
+                    <p style="color:#7f248d; " class="fs-2">Meet Our Team</p>
+                    <h2 style="color:#1082ce;" class="fs-3">Awesome guys behind our charity activities</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="../images/about/prapti.jpg" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2> Prapti </h2>
+                                <p>Leader</p>
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="../images/about/prapti.jpg" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2> Prapti </h2>
+                                <p>Leader</p>
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="../images/about/prapti.jpg" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2> Prapti </h2>
+                                <p>Leader</p>
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="../images/about/prapti.jpg" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2> Prapti </h2>
+                                <p>Leader</p>
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="../images/about/yash1.png" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Yash</h2>
+                                <p>Leader</p>
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="../images/about/darshika1.jpg" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Darshika Agrawal</h2>
+                                <p>Team Member</p>
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="../images/about/aditi.jpg" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2> Aditi Kundnani </h2>
+                                <p>Team Member</p>
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="../images/about/aditi.jpg" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2> Aditi Kundnani </h2>
+                                <p>Team Member</p>
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+            </div>
+        </div>
+    <!-- Team End -->
+
+    
+    
     <!--footer-->
-    <div class="bg-dark bg-gradient text-light p-4 fixed-bottom">
+     <div class="bg-dark bg-gradient text-light p-4 ">
         <div class="row">
             <div class="col-lg-3 my-auto">
                 <img class="d-block" src="../icon/logo-rectangle.PNG" />
@@ -106,10 +424,16 @@
     </div>
     <!--end of footer-->
 
+
+   
+
+    
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/14a1a7dd00.js" crossorigin="anonymous"></script>
+
 
 </html>

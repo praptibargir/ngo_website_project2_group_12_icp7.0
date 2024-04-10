@@ -1,0 +1,238 @@
+/*******************************/
+/*********** Team CSS **********/
+/*******************************/
+.team {
+    position: relative;
+    width: 100%;
+    padding: 50px 0 50px 0;
+    height: 500px;
+}
+.team .container{
+    height: 800px;
+}
+.team .team-item {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.team .team-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.team .team-img img {
+    width: 100%;
+    transform: scale(1.1);
+    margin-bottom: -15px;
+    transition: .3s;
+}
+
+.team .team-item:hover img {
+    margin: -15px 0 0 0;
+}
+
+.team .team-text {
+    position: absolute;
+    width: calc(100% - 40px);
+    height: 96px;
+    bottom: 0;
+    left: 20px;
+    padding: 22px 0;
+    text-align: center;
+    background: #ffffff;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.team .team-text h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.team .team-text p {
+    margin-bottom: 20px;
+}
+
+.team .team-social {
+    position: relative;
+    font-size: 0;
+}
+
+.team .team-social a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin: 0 3px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #4a4c70;
+    border: 2px solid #FDBE33;
+    transition: .3s;
+}
+
+.team .team-social a:hover {
+    color: #20212B;
+    background: #FDBE33;
+}
+
+.team .team-item:hover .team-text {
+    height: 160px;
+}
+
+/*******************************/
+/********** About CSS **********/
+/*******************************/
+.about {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.about .section-header {
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+.about .about-img {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/about/about.jpg);
+}
+
+@media (max-width: 991.98px) {
+    .about .section-header {
+        margin-top: 30px;
+    }
+}
+
+
+/*******************************/
+/******* Section Header ********/
+/*******************************/
+.section-header {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 45px auto;
+}
+
+.section-header p {
+    margin-bottom: 5px;
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #7f248d;
+}
+
+.section-header h2 {
+    margin: 0;
+    font-size: 45px;
+    font-weight: 700;
+    color: #1082ce;
+}
+
+@media (max-width: 991.98px) {
+    .section-header h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section-header h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .section-header h2 {
+        font-size: 35px;
+    }
+}
+
+/*******************************/
+/******* Supporters CSS ********/
+/*******************************/
+.thumbnail {
+    border-radius: 20px;
+    width: 600px;
+    height: 250px;
+}
+
+.text-dim {
+    color: #aaaaaa;
+}
+
+/*******************************/
+/******* testinominal CSS ********/
+/*******************************/
+.customer-reviews-text{
+    margin-left: 550px;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 50px;
+
+}
+.user-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 50px;
+    margin-top: -75px;
+  }
+  .user-card{
+    background-color: #F2F4F4;
+    width: 530px;
+    margin: 20px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    height: 290px;
+    position: relative;
+  }
+  .user-profile{
+    display: block;
+    border-radius: 50%;
+    margin: 5px auto;
+    height: 80px;
+    margin-left: 0;
+  }
+  .user-name{
+    color: black;
+    font-size: 20px;
+    margin: 18px auto;
+    padding: 10px;
+    margin-top: -85px;
+    margin-left: 90px;
+ }
+ .user-name-email{
+    color: black;
+    font-size: 15px;
+    margin: 18px auto;
+    padding: 10px;
+    margin-top: -34px;
+    margin-left: 90px;
+ }
+.review-rating-img
+{
+    margin-top: -240px;
+    margin-left: 350px;
+}
+.review-text{
+    font-size: 18px;
+    margin-top: 50px;
+    
+}
+.rating-star{
+    margin-top: -240px;
+    margin-left: 350px;
+}
+.user-card:hover{
+    background-color: darkgrey;
+    box-shadow: 0 0 3px 1px grey;
+    transition: 0.3s;
+}
+.small-txt{
+    font-weight: bold;
+}
