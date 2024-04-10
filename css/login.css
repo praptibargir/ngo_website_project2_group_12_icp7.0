@@ -1,0 +1,78 @@
+.main-heading {
+    text-align: center;
+    color: #7f248d;
+    margin: 20px auto;
+}
+
+.main {
+    width: 550px;
+    display: block;
+    margin: 30px auto;
+    padding: 30px auto;
+    text-align: center;
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    background-color: rgb(251, 250, 250);
+}
+
+.First-Heading {
+    color: #1082ce;
+}
+
+.Second-Heading {
+    color: #fbc108;
+    font-size: 30px;
+}
+
+.name {
+    font-size: 30px;
+
+    padding: 10px;
+
+}
+
+.usePass {
+    width: 50%;
+    font-size: 20px;
+    padding: 5px 5px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.btn-login {
+    width: 200px;
+    font-size: 20px;
+}
+
+.para-info {
+    margin: 10px auto;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        width: 90%;
+    }
+    .main-heading {
+        font-size: 25px;
+    }
+    .First-Heading {
+       font-size: 25px;
+    }
+    .Second-Heading {
+        font-size: 23px;
+    }
+    .name {
+        font-size: 20px;
+    }
+    .usePass {
+        font-size: 15px;
+        padding: 5px 5px;
+        margin: 10px auto;
+        border-radius: 5px;
+    }   
+    .btn-login {
+        width: 100px;
+        padding: 3px 3px;
+    }
+}     
