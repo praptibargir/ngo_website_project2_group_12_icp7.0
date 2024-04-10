@@ -22,12 +22,15 @@
 .text{
     margin-top: 17%;
 }
+.text2{
+    color: #1082ce;
+}
 h2{
     color: #7f248d;
 }
 p{
     font-size: larger;
-    color: #1082ce;
+    color: #000000;
     margin-right: 5%;
 }
 
@@ -55,10 +58,10 @@ p{
     box-shadow: 0 6px 12px rgba(127, 36, 141, 0.3); /* lighter shade of #7f248d */
 }
 .card h2 {
-    color:#7f248d;
+    color:#1082ce;
 }
 .card p {
-    color: #1082ce;
+    color: #000000;
 }
 .logo {
     width: 50px;
@@ -103,6 +106,13 @@ p{
     width: 80%;
     max-width: 600px;
 }
+.expanded-text h2{
+    color: #f1471d;;
+}
+.expanded-text p{
+    color: #000000;
+}
+
 .close-btn {
     position: absolute;
     top: 10px;
