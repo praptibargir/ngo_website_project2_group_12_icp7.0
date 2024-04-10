@@ -1,8 +1,18 @@
+
 .accordion-item{
     width: 800px;
-    margin-left: 30px;
+    margin: 25px auto;
+    border-radius: none;
     
 }
-.accordion-header2{
-    margin-top: 30px;
+.accordion-button{
+    background-color: #1082ce;
+    border-radius: 10px;
+    
 }
+.accordion-body{
+    box-shadow: 0 0 20px 0 #080808;
+    border-radius: 0 0 10px 10px;
+}
+
+
