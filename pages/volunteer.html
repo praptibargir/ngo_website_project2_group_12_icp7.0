@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/volunteer.css" />
+    
 </head>
 
 <body>
@@ -68,6 +70,78 @@
         </div>
     </div>
     <!-- Page Header End -->
+<div class="container1">
+    <div id="slideshow-container" class="ss">
+        <div class="slide" alt="img"><img src="../images/volunteer/slideshow6.webp" alt="Image 1" height="400px" width="600px"></div>
+        <div class="slide" alt="img"><img src="../images/volunteer/slideshow4.avif" alt="Image 2" height="400px" width="600px"></div>
+        <div class="slide" alt="img"><img src="../images/volunteer/slideshow3.webp" alt="Image 3" height="400px" width="600px"></div>
+        <div class="slide" alt="img"><img src="../images/volunteer/slideshow5.jpg" alt="Image 4" height="400px" width="600px"></div>
+        <div class="slide" alt="img"><img src="../images/volunteer/slideshow1.jpg" alt="Image 5" height="400px" width="600px"></div>
+        <div class="slide" alt="img"><img src="../images/volunteer/slideshow2.jpeg" alt="Image 6" height="400px" width="600px"></div>
+    </div>
+    <div class="text-container">
+        <b><h2 class="text">Join Us In The Journey Of Spreading </h2></b>
+        <b><h2> Love, Harmony, Faith And Happiness</h2></b>
+        <p>Your passion, dedication, and selflessness make you an ideal candidate to make a meaningful impact as a volunteer at our NGO. We admire your willingness to contribute and believe your unique skills will greatly benefit our cause.</p>
+    </div>
+</div>
+<div class="card-container">
+    <!-- Card 1 -->
+    <div class="card" id="card1">
+        <img src="../icon/volunteer/logo4.png" alt="Logo 1" class="logo">
+        <h2>Warm Ambiance</h2>
+        <p>Work setting that prioritizes family, with remote options and flexible hours.</p>
+        <button class="learn-more" onclick="expandCard('card1')">Learn More</button>
+    </div>
+    <!-- Continue with similar structure for other cards -->
+    <!-- Card 2 -->
+    <div class="card" id="card2">
+        <img src="../icon/volunteer/logo2.png" alt="Logo 2" class="logo">
+        <h2>Financial Plan</h2>
+        <p>Benefit from a 4% match and immediate vesting to secure your financial future.</p>
+        <button class="learn-more" onclick="expandCard('card2')">Learn More</button>
+    </div>
+    <!-- Card 3 -->
+    <div class="card" id="card3">
+        <img src="../icon/volunteer/logo3.png" alt="Logo 3" class="logo">
+        <h2>Healthcare Plans</h2>
+        <p>Access generous healthcare, dental, and vision plans for you and your family.</p>
+        <button class="learn-more" onclick="expandCard('card3')">Learn More</button>
+    </div>
+    <!-- Card 4 -->
+    <div class="card" id="card4">
+        <img src="../icon/volunteer/logo1.png" alt="Logo 4" class="logo">
+        <h2>Paid Leave</h2>
+        <p>Take advantage of paid breaks and parental leave to support your well-being.</p>
+        <button class="learn-more" onclick="expandCard('card4')">Learn More</button>
+    </div>
+    <!-- Card 5 -->
+    <div class="card" id="card5">
+        <img src="../icon/volunteer/logo5.png" alt="Logo 5" class="logo">
+        <h2>Travel Policies</h2>
+        <p>Explore opportunities to travel and visit our nonprofit partners around the world.</p>
+        <button class="learn-more" onclick="expandCard('card5')">Learn More</button>
+    </div>
+    <!-- Card 6 -->
+    <div class="card" id="card6">
+        <img src="../icon/volunteer/logo6.png" alt="Logo 6" class="logo">
+        <h2>Office Perks</h2>
+        <p>Enjoy free soda, coffee, and participate in fun cook-offs with the team.</p>
+        <button class="learn-more" onclick="expandCard('card6')">Learn More</button>
+    </div>
+</div>
+
+<!-- Expanded Section -->
+<div class="overlay" id="overlay">
+    <div class="expanded-text" id="expandedText">
+    <button class="close-btn" onclick="closeExpanded()">X</button>
+    <h2 id="expandedTitle"></h2>
+    <p id="expandedDescription"></p>
+</div>
+</div>
+
+
+    
 
     <!--footer-->
     <div class="bg-dark bg-gradient text-light p-4">
@@ -128,5 +202,52 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/14a1a7dd00.js" crossorigin="anonymous"></script>
+
+
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(n) {
+        slides.forEach(slide => {
+            slide.style.display = 'none';
+        });
+        slides[n].style.display = 'block';
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    // Initial slide display
+    showSlide(currentSlide);
+
+    // Automatic slideshow
+    setInterval(nextSlide, 2000); // Change slides every 2 seconds
+
+
+    function expandCard(cardId) {
+    const expandedText = document.getElementById(`expandedText`);
+    const expandedTitle = document.getElementById(`expandedTitle`);
+    const expandedDescription = document.getElementById(`expandedDescription`);
+    const card = document.getElementById(cardId);
+
+    expandedTitle.innerText = card.querySelector('h2').innerText;
+    expandedDescription.innerText = card.querySelector('p').innerText;
+    
+    const overlay = document.getElementById('overlay');
+    overlay.style.display = 'flex';
+
+    expandedText.style.display = "block";
+}
+
+function closeExpanded() {
+    const overlay = document.getElementById('overlay');
+    overlay.style.display = 'none';
+}
+</script>
+
 
 </html>
