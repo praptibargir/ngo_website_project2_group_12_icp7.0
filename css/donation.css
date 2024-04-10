@@ -197,6 +197,40 @@
     transition: all 0.3s ease;
 }
 
+.box-big {
+    background-color: #f8f9fa; /* Background color */
+    padding: 40px; /* Adjust padding as needed */
+    margin: 20px auto; /* Center box horizontally with margin from top and bottom */
+    width: 80%; /* Set width to 70% of the screen */
+    max-width: 1800px; /* Set maximum width */
+    border: 2px solid #fbc108;
+}
+
+.box-big .box-big-content {
+    margin: 0 auto; /* Center content horizontally */
+}
+
+.box-big-content h2{
+    color: #7f248d;
+    font-size: 35px;
+}
+.box-big-content span{
+    font-weight: 800;
+}
+.sub-heading{
+    color: #1082ce;
+    font-size: 25px;
+    font-weight: 600;
+}
+.highlight{
+    font-weight: 600;
+}
+
+
+
+
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .box {
