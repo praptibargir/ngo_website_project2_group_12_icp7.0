@@ -7,7 +7,9 @@
     padding: 50px 0 50px 0;
     height: 500px;
 }
-
+.team .container{
+    height: 800px;
+}
 .team .team-item {
     position: relative;
     margin-bottom: 35px;
@@ -122,13 +124,14 @@
     font-size: 22px;
     font-weight: 600;
     text-transform: capitalize;
-    color: #FDBE33;
+    color: #7f248d;
 }
 
 .section-header h2 {
     margin: 0;
     font-size: 45px;
     font-weight: 700;
+    color: #1082ce;
 }
 
 @media (max-width: 991.98px) {
@@ -147,4 +150,89 @@
     .section-header h2 {
         font-size: 35px;
     }
+}
+
+/*******************************/
+/******* Supporters CSS ********/
+/*******************************/
+.thumbnail {
+    border-radius: 20px;
+    width: 600px;
+    height: 250px;
+}
+
+.text-dim {
+    color: #aaaaaa;
+}
+
+/*******************************/
+/******* testinominal CSS ********/
+/*******************************/
+.customer-reviews-text{
+    margin-left: 550px;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 50px;
+
+}
+.user-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 50px;
+    margin-top: -75px;
+  }
+  .user-card{
+    background-color: #F2F4F4;
+    width: 530px;
+    margin: 20px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    height: 290px;
+    position: relative;
+  }
+  .user-profile{
+    display: block;
+    border-radius: 50%;
+    margin: 5px auto;
+    height: 80px;
+    margin-left: 0;
+  }
+  .user-name{
+    color: black;
+    font-size: 20px;
+    margin: 18px auto;
+    padding: 10px;
+    margin-top: -85px;
+    margin-left: 90px;
+ }
+ .user-name-email{
+    color: black;
+    font-size: 15px;
+    margin: 18px auto;
+    padding: 10px;
+    margin-top: -34px;
+    margin-left: 90px;
+ }
+.review-rating-img
+{
+    margin-top: -240px;
+    margin-left: 350px;
+}
+.review-text{
+    font-size: 18px;
+    margin-top: 50px;
+    
+}
+.rating-star{
+    margin-top: -240px;
+    margin-left: 350px;
+}
+.user-card:hover{
+    background-color: darkgrey;
+    box-shadow: 0 0 3px 1px grey;
+    transition: 0.3s;
+}
+.small-txt{
+    font-weight: bold;
 }

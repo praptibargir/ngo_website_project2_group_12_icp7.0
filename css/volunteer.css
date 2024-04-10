@@ -1,0 +1,111 @@
+.container1{
+    display: flex;
+    justify-content: space-between;
+}
+.ss {
+    position: relative;
+    margin-left: 3%;
+    margin-bottom: 40%;
+    margin-right: 0%;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3px solid #4a4c70;
+}
+.text-container {
+    margin-left:50%; /* Add some spacing between slideshow and text */
+    text-align: left;
+    
+}
+.text{
+    margin-top: 17%;
+}
+h2{
+    color: #7f248d;
+}
+p{
+    font-size: larger;
+    color: #1082ce;
+    margin-right: 5%;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+ 
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(127, 36, 141, 0.3); /* lighter shade of #7f248d */
+    overflow: hidden;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(127, 36, 141, 0.3); /* lighter shade of #7f248d */
+}
+.card h2 {
+    color:#7f248d;
+}
+.card p {
+    color: #1082ce;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    margin-left:38%;
+}
+.learn-more {
+    background-color: #ffffff;;
+    color: #13632e;
+    border: 2px solid #13632e;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+.learn-more:hover {
+    background-color: #13632e; /* darker shade for hover effect */
+    color: #fff;
+}
+.expanded {
+    transform: scale(1.1);
+    z-index: 1;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+.expanded-text {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}

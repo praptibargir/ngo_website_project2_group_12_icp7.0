@@ -1,8 +1,21 @@
-.theme{
-    margin: 1px;
+.theme {
+    margin-left: 10px;
 }
-.theme-img{
-    height: 50px;
+
+.theme-img {
+    height: 30px;
+    background-color: white;
+    padding: 0.5px;
+    border-radius: 50%;
+}
+
+.theme-light{
+    background-color: white;
+}
+
+.theme-dark{
+    background-color: black;
+    color: white;
 }
 
 .cards {
@@ -23,6 +36,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .card-text {
@@ -35,9 +49,12 @@
     font-size: 18px;
     border: none;
     font-weight: bolder;
-    width: 40%;
     display: block;
     margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
 }
 
 @media screen and (max-width:1100px) and (min-width:700px) {
@@ -94,4 +111,20 @@
     .button {
         font-size: 10px;
     }
+}
+
+.work-img{
+    height: 80px;
+    width: 80px;
+}
+
+.counter {
+    position: relative;
+    padding: 100px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/home/counter.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
