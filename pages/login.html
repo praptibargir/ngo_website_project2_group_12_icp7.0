@@ -9,6 +9,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="/css/login.css">
+<script src="/js/login.js"></script>
 </head>
 
 <body>
@@ -60,10 +61,10 @@
      <h3 class="Second-Heading">Enter Your Login Details</h3>
      <form action="">
         <label for="first" class="name">Username :</label>
-        <input type="text" id="first" name="first" class="usePass" placeholder="Enter Your Username" required>
+        <input type="text" id="username" name="first" class="usePass" placeholder="Enter Your Username" required>
         <label for="password" class="name">Password :</label>
         <input type="password" id="password" name="password" class="usePass" placeholder="Enter Your Password" required>
-        <button type="button" class="btn btn-outline-success btn-login">
+        <button type="button" class="btn btn-outline-success btn-login" onclick="validation()">
             Submit
         </button>
         <p class="para-info">
