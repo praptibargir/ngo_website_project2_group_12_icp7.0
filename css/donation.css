@@ -46,3 +46,64 @@
 .slider-container img:first-child {
     display: block;
 }
+
+.boxes-container {
+    display: flex;
+    margin: 20px 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px; 
+}
+
+.box {
+    width: calc(33.33% - 10px); 
+    height: 300px; 
+    /* background-color: #ccc;  */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-bottom: 30px; 
+    box-sizing: border-box;
+    background-color: #f3f2f3;
+    border-radius: 30px;
+}
+.box-content h2{
+    
+    text-align: center;
+    margin: 8px 0;
+}
+
+.box:hover{
+    background-color: blueviolet;
+    color: #fff;
+    transition: 0.9s;
+}
+
+/* .box-1{
+    background-color: #fbc108;
+}
+.box-2{
+    background-color: #7f248d;
+}
+.box-3{
+    background-color: #40b93c;
+} */
+
+
+
+
+
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .box {
+        width: calc(50% - 10px); /* Adjust margin according to your design */
+    }
+}
+
+@media (max-width: 576px) {
+    .box {
+        width: 100%;
+    }
+}

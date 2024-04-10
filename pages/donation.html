@@ -55,23 +55,49 @@
     </nav>
     <!--End of header-->
 
-    
-  
+
+
 
 
     <!-- main section of donation starts here  -->
 
     <div class="slider-container">
-        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hhcml0eXxlbnwwfHwwfHx8MA%3D%3D" alt="Image 1">
-        <img src="https://makeadiff.in/images/hero2-Home-MAD-Make-A-Difference,Top-NGO-in-India,Charity.jpg" alt="Image 2">
-        <img src="https://media.istockphoto.com/id/1330986197/photo/the-woman-is-holding-a-red-heart.jpg?s=612x612&w=0&k=20&c=nEfqRUOo_8tiTPyGZCpU481BaQVhgaE3ojKlSD-fxh0=" alt="">
-        <div class="slider-text">
-            <h1 class="">Donate For A Better World</h1>
-            <p>Together We Advocate, Together We Impact</p>
-            <button type="button" class="btn btn-outline-success">Donate Now</button>
+        <div class="slider-content">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hhcml0eXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Image 1">
+            <img src="https://makeadiff.in/images/hero2-Home-MAD-Make-A-Difference,Top-NGO-in-India,Charity.jpg"
+                alt="Image 2">
+            <img src="https://media.istockphoto.com/id/1330986197/photo/the-woman-is-holding-a-red-heart.jpg?s=612x612&w=0&k=20&c=nEfqRUOo_8tiTPyGZCpU481BaQVhgaE3ojKlSD-fxh0="
+                alt="">
+            <div class="slider-text">
+                <h1 class="">Donate For A Better World</h1>
+                <p>Together We Advocate, Together We Impact</p>
+                <button type="button" class="btn btn-outline-success">Donate Now</button>
+            </div>
+        </div>
 
+
+    </div>
+
+
+    <div class="boxes-container">
+        <div class="box box-1 ">
+            <div class="box-content">
+                <h2>Donate Now</h2>
+            </div>
+        </div>
+        <div class="box box-2">
+            <div class="box-content">
+                <h2>Join Us Now</h2>
+            </div>
+        </div>
+        <div class="box box-3">
+            <div class="box-content">
+                <h2>Get Involved</h2>
+            </div>
         </div>
     </div>
+
 
 
 
@@ -147,7 +173,7 @@
         // JavaScript for sliding through images
         let slideIndex = 0;
         carousel();
-    
+
         function carousel() {
             let i;
             const slides = document.querySelectorAll('.slider-container img');
@@ -155,9 +181,11 @@
                 slides[i].style.display = 'none';
             }
             slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex-1].style.display = 'block';
-            setTimeout(carousel, 3000); 
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = 'block';
+            setTimeout(carousel, 3000);
         }
     </script>
 
