@@ -25,10 +25,10 @@
 .text2{
     color: #1082ce;
 }
-h2{
+.text-container h2{
     color: #7f248d;
 }
-p{
+.text-container p{
     font-size: larger;
     color: #000000;
     margin-right: 5%;
