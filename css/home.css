@@ -49,9 +49,12 @@
     font-size: 18px;
     border: none;
     font-weight: bolder;
-    width: 40%;
     display: block;
     margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
 }
 
 @media screen and (max-width:1100px) and (min-width:700px) {
