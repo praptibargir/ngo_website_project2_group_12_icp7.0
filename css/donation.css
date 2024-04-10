@@ -2,7 +2,7 @@
     margin: 10px 0;
     position: relative;
     width: 100%;
-    height: 450px; 
+    height: 450px;
     overflow: hidden;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
@@ -11,7 +11,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: blur(3px); 
+    filter: blur(3px);
     position: absolute;
     top: 0;
     left: 0;
@@ -34,7 +34,7 @@
 
 .slider-text p {
     font-size: 1.2em;
-    
+
 }
 
 
@@ -52,40 +52,166 @@
     margin: 20px 100px;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
 .box {
-    width: calc(33.33% - 10px); 
-    height: 300px; 
-    /* background-color: #ccc;  */
+    width: calc(33.33% - 10px);
+    height: 370px;
+    
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    background-color: #f3f2f3;
+    border-radius: 20px;
+}
+
+.box-content h2 {
+
+    text-align: center;
+    margin: 8px 0;
+    font-size: 28px;
+}
+
+.box:hover {
+    /* background-color: #7f248d; */
+    color: #fff;
+    transition: 0.6s;
+}
+.box-1:hover{
+    background-color: #7f248d; 
+}
+.box-2:hover{
+    background-color: #fbc108; 
+    color: black;
+}
+.box-3:hover{
+    background-color: #f1471d; 
+}
+.box-content{
+    padding: 4px 15px;
+    text-align: justify;
+}
+.box-content button{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px auto;
+}
+
+
+.box-content button {
+    background-color: transparent;
+    border: 2px solid #28a745; 
+    color: #28a745; 
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+
+
+.slider-container {
+    margin: 10px 0;
+    position: relative;
+    width: 100%;
+    max-height: 450px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.slider-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(3px);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.slider-text h1 {
+    font-size: 3.5vw; 
+    font-weight: 800;
+    margin: 0;
+}
+
+.slider-text p {
+    font-size: 1.2em;
+}
+
+
+.slider-container img {
+    display: none;
+}
+
+.slider-container img:first-child {
+    display: block;
+}
+
+
+.boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 10px;
+}
+
+.box {
+    width: calc(33.33% - 10px);
+    height: auto; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-bottom: 30px;
     box-sizing: border-box;
     background-color: #f3f2f3;
     border-radius: 30px;
 }
-.box-content h2{
-    
+
+.box-content h2 {
     text-align: center;
     margin: 8px 0;
+    font-size: 2.5vw; 
 }
 
-.box:hover{
-    background-color: blueviolet;
-    color: #fff;
-    transition: 0.9s;
+
+.box-content {
+    padding: 4px 19px;
+    text-align: justify;
 }
 
-/* .box-1{
-    background-color: #fbc108;
+.box-content button {
+    background-color: transparent;
+    border: 2px solid #28a745;
+    color: #28a745;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
 }
-.box-2{
-    background-color: #7f248d;
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .box {
+        width: calc(50% - 10px); 
+    }
 }
-.box-3{
-    background-color: #40b93c;
-} */
+
+@media (max-width: 576px) {
+    .box {
+        width: 100%;
+    }
+}
+
+
+
 
 
 
@@ -98,7 +224,8 @@
 /* Responsive styles */
 @media (max-width: 768px) {
     .box {
-        width: calc(50% - 10px); /* Adjust margin according to your design */
+        width: calc(90% - 80px);
+        /* Adjust margin according to your design */
     }
 }
 
