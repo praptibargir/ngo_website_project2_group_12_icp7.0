@@ -52,8 +52,8 @@
             </div>
             <button type="button" class="btn btn-outline-success">Login/Register</button>
             <div class="theme">
-                <img src="images/light.png" class="theme-img" id="body" onclick="lightmode()" />
-                <img src="images/dark.png" class="theme-img" id="body" onclick="darkmode()" />
+                <img src="images/light.png" class="theme-img" id="light" onclick="lightmode()" />
+                <img src="images/dark.png" class="theme-img" id="dark" onclick="darkmode()" />
             </div>
         </div>
     </nav>
@@ -89,7 +89,7 @@
     <div class="p-5 m-1">
         <h1 class="text-center fs-1 colour-purple">Unity Uplift </h1>
         <h2 class="fs-3 text-center colour-blue mb-3">Empowering Communities Through Unity</h2>
-        <p class="fs-5 text-center">
+        <p class="intro-text">
             At Unity Uplift, we believe in the power of unity to uplift communities and create positive change. Our
             foundation is dedicated to serving as a catalyst for social progress, working hand in hand with individuals,
             organizations, and communities to address pressing issues and build a brighter future for all. Our mission
@@ -139,30 +139,89 @@
     </div>
     <!--cards end-->
 
+
+    <!--Gallery-->
+
+    <h2 class="text-center fs-1 colour-purple">Gallery</h2>
+    <h3 class="fs-3 text-center colour-blue mb-3">Glimpses of our work</h3>
+    <div class="gallery-card section-colour">
+        <div>
+            <img src="images/home/h5.jpg" class="gallery-img" id="gallery-image" />
+        </div>
+        <div class="gallery-text">
+            <h3 class="fs-3 colour-red" id="gallery-subheading">Free Education</h3>
+            <p class="card-text text-center" id="gallery-text">"Education for All" is a noble cause.<br />
+                Access to Education, Equitable Education, Quality Education, Early Childhood Education
+                , etc.</p>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button type="button" class="selector" id="btn-1" onclick="freeEdu()"> </button>
+        <button type="button" class="selector" id="btn-2" onclick="womenEmp()"> </button>
+        <button type="button" class="selector" id="btn-3" onclick="health()"> </button>
+        <button type="button" class="selector" id="btn-4" onclick="care()"> </button>
+        <button type="button" class="selector" id="btn-5" onclick="awareness()"> </button>
+    </div>
+
+    <!--end of gallery section-->
+
     <!--Counter section-->
 
     <div class="counter my-5">
         <div class="container">
             <div class="row d-flex flex-row justify-content-center align-items-center">
                 <div class="col-lg-3">
-                    <img src="images/home/group .png">
-                    <h2 class="text-center" style="color: white;"><span id="counter1" >0</span>K+<br/>Kind Volunteers</h2>
+                    <img src="images/home/group .png" class="counter-img">
+                    <h2 class="text-center" style="color: white;"><span id="counter1">0</span>K+<br />Kind Volunteers
+                    </h2>
                 </div>
                 <div class="col-lg-3">
-                    <img src="images/home/donation.png">
-                    <h2 class="text-center" style="color: white;"><span id="counter2">0</span>K+<br/>Donations</h2>
+                    <img src="images/home/donation.png" class="counter-img">
+                    <h2 class="text-center" style="color: white;"><span id="counter2">0</span>K+<br />Donations</h2>
                 </div>
                 <div class="col-lg-3">
-                    <img src="images/home/marketing.png" >
-                    <h2 class="text-center" style="color: white;"><span id="counter3">0</span>K+<br/>Campaigns</h2>
+                    <img src="images/home/marketing.png" class="counter-img">
+                    <h2 class="text-center" style="color: white;"><span id="counter3">0</span>K+<br />Campaigns</h2>
                 </div>
                 <div class="col-lg-3">
-                    <img src="images/home/raise.png" >
-                    <h2 class="text-center" style="color: white;"><span id="counter4">0</span>K+<br/>Funds Raised</h2>
-                </div>                
+                    <img src="images/home/raise.png" class="counter-img">
+                    <h2 class="text-center" style="color: white;"><span id="counter4">0</span>K+<br />Funds Raised
+                    </h2>
+                </div>
             </div>
         </div>
     </div>
+
+    <script>
+        // Define target numbers for each counter
+        const targetNumbers = [100, 200, 300,400]; // Change this to your desired numbers
+
+        // Get counter elements
+        const counterElements = [
+            document.getElementById('counter1'),
+            document.getElementById('counter2'),
+            document.getElementById('counter3'),
+            document.getElementById('counter4')
+        ];
+
+        // Function to update a specific counter
+        function updateCounter(index) {
+            let count = parseInt(counterElements[index].innerText);
+            if (count < targetNumbers[index]) {
+                count++;
+                counterElements[index].innerText = count;
+                setTimeout(() => updateCounter(index), 10); // Change the delay (in milliseconds) if needed
+            }
+        }
+
+        // Start each counter
+        for (let i = 0; i < targetNumbers.length; i++) {
+            updateCounter(i);
+        }
+    </script>
+
+
 
     <!--end of counter section-->
 
@@ -203,21 +262,12 @@
     </div>
     <!--end of work section-->
 
-    <!--Gallery-->
-
-    <h2 class="text-center fs-1 colour-purple">Gallery</h2>
-    <h3 class="fs-3 text-center colour-blue mb-3">Glimpses of our work</h3>
-    <div class="main-img">
-        <img src="">
-    </div>
-
-    <!--end of gallery section-->
 
     <!--footer-->
     <div class="bg-dark bg-gradient text-light p-4">
         <div class="row">
             <div class="col-lg-3 my-auto">
-                <img class="d-block" src="icon/logo-rectangle.PNG" />
+                <img class="d-block footer-logo" src="icon/logo-rectangle.PNG" />
                 <p class="pt-3">Get in Touch with us:</p>
                 <div>
                     <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fs-2 p-2 pt-0"
@@ -276,6 +326,5 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/14a1a7dd00.js" crossorigin="anonymous"></script>
-
 
 </html>
