@@ -21,6 +21,10 @@
     background-color: black;
     color: white;
 }
+.problem{
+    height: 100px;
+    width: 100px;
+}
 .accordion-item{
     width: 800px;
     margin: 25px auto;
