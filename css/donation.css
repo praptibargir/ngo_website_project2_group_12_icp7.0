@@ -235,8 +235,8 @@
 }
 
 .detail {
-    flex: 1 1 25%; /* Adjust width as needed */
-    margin: 10px; /* Adjust margin as needed */
+    flex: 1 1 25%;
+    margin: 10px;
     padding: 20px;
    
     border-radius: 10px;
@@ -251,17 +251,18 @@
 @media screen and (max-width: 768px) {
     .donation-details{
         display: block;
-        /* width: 100%; */
+        
     }
     .detail {
-        flex: 1 1 50%; /* Adjust width as needed for smaller screens */
+        flex: 1 1 50%; 
         width: 100%;
     }
+    
 }
 
 @media screen and (max-width: 480px) {
     .detail {
-        flex: 1 1 100%; /* Adjust width as needed for even smaller screens */
+        flex: 1 1 100%; 
         width: 100%;
     }
 }
@@ -297,7 +298,7 @@
 @media (max-width: 768px) {
     .box {
         width: calc(90% - 80px);
-        /* Adjust margin according to your design */
+        
     }
 }
 
@@ -465,6 +466,8 @@ a{
     width: 400px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     /* padding: 20px; */
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -472,20 +475,49 @@ a{
 
 /* Progress Bar Styles */
 .progress-bar {
-    width: 100%;
+    width: 90%;
     background-color: #f0f0f0;
-    border-radius: 5px;
+    border-radius: 2px;
+    margin: 15px auto;
     overflow: hidden;
 }
 
 .progress-bar-fill {
-    height: 20px;
-    background-color: #4caf50;
+    height: 14px;
+    background-color: #fbc108;
     transition: width 0.3s ease-in-out;
     animation: progressAnimation 2s ease-in-out forwards;
     /* Animation added */
 }
-
+.progress-button{
+    margin: 10px auto;
+}
+.funded-text{
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.main-container h2{
+    font-size: 40px;
+    color: #7f248d;
+    font-weight: 800;
+}
+.main-container  span{
+    color: #1082ce;
+    font-size: 36px;
+}
+.progress-card h3{
+    font-size: 23px;
+    color:#f1471d;
+    font-weight: 700;
+    text-align: center;
+    margin: 6px 0;
+}
+.progress-card p{
+    margin: 0 10px;
+    text-align: justify;
+}
 /* Keyframe Animation */
 @keyframes progressAnimation {
     from {
