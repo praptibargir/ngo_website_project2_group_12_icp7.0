@@ -13,9 +13,9 @@
 
 </head>
 
-<body>
-    <!--Header-->
-    <nav class="navbar navbar-expand-lg bg-body-light shadow">
+<body id="body">
+     <!--Header-->
+     <nav class="navbar navbar-expand-lg bg-body-light shadow">
         <div class="container-fluid">
             <img class="nav-logo" src="../icon/logo-rectangle.PNG" />
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -24,38 +24,41 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav  mb-2 nav-underline ">
+                <ul class="navbar-nav  mb-2 nav-underline " id="header">
                     <li class="nav-item">
-                        <a class="nav-link " href="../index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../pages/aboutus.html">About</a>
+                        <a class="nav-link" href="pages/aboutus.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/ourwork.html">Our Work</a>
+                        <a class="nav-link" href="pages/ourwork.html">Our Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/donation.html">Donation</a>
+                        <a class="nav-link" href="pages/donation.html">Donation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/blog.html">Blog</a>
+                        <a class="nav-link" href="pages/blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/volunteer.html">Volunteer</a>
+                        <a class="nav-link" href="pages/volunteer.html">Volunteer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/faq.html">FAQ</a>
+                        <a class="nav-link" href="pages/faq.html">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/contact.html">Contact</a>
+                        <a class="nav-link" href="pages/contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
-            <button type="button" class="btn btn-outline-warning">Login/Register</button>
+            <button type="button" class="btn btn-outline-success">Login/Register</button>
+            <div class="theme">
+                <img src="../images/light.png" class="theme-img" id="light" onclick="lightmode()" />
+                <img src="../images/dark.png" class="theme-img" id="dark" onclick="darkmode()" />
+            </div>
         </div>
     </nav>
     <!--End of header-->
-
     <!-- Page Header Start -->
     <div class="page-header">
         <div class="container">
