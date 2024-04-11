@@ -1,0 +1,46 @@
+.main-heading {
+    text-align: center;
+    color: #7f248d;
+    margin: 20px auto;
+}
+.First-Heading {
+    color: #1082ce;
+}
+
+.Second-Heading {
+    color: #fbc108;
+    font-size: 30px;
+}
+.main-container{
+    width: 750px;
+    display: block;
+    margin: 30px auto;
+    padding: 30px auto;
+    text-align: center;
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    background-color: rgb(251, 250, 250);
+}
+.label-name{
+    font-size: 30px;
+    padding: 10px;
+    display: block;
+}
+.input-name{
+    width: 80%;
+    font-size: 20px;
+    padding: 5px 20px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.field{
+    height: 70px;
+    margin-bottom: 20px;
+}
+.btn-registration{
+    width: 80%;
+    font-size: 25px;
+    padding: 2px;
+    margin-bottom: 20px;
+}
