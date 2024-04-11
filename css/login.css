@@ -3,14 +3,21 @@
     color: #7f248d;
     margin: 20px auto;
 }
-
+.login{
+    position: relative;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 45px 0;
+    background: rgba(0, 0, 0, .5);
+    background-image: url(/images/registration/background-registration-img.jpeg);
+}
 .main {
     width: 550px;
     display: block;
     margin: 30px auto;
     padding: 30px auto;
     text-align: center;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px white;
     border-radius: 10px;
     background-color: rgb(251, 250, 250);
 }
@@ -70,6 +77,6 @@
     }   
     .btn-login {
         width: 100px;
-        padding: 3px 3px;
+        padding: 2px ;
     }
 }     
