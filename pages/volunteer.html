@@ -9,6 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/volunteer.css" />
+    <script src="../js/volunteer.js"></script>
     
 </head>
 
@@ -81,11 +82,14 @@
     </div>
     <div class="text-container">
         <b><h2 class="text">Join Us In The Journey Of Spreading </h2></b>
-        <b><h2> Love, Harmony, Faith And Happiness</h2></b>
+        <b><h2 class="text2"> Love, Harmony, Faith And Happiness</h2></b>
         <p>Your passion, dedication, and selflessness make you an ideal candidate to make a meaningful impact as a volunteer at our NGO. We admire your willingness to contribute and believe your unique skills will greatly benefit our cause.</p>
     </div>
 </div>
+
+<b><span class="benefits">Benefits Of Joining Us!</span></b>
 <div class="card-container">
+ 
     <!-- Card 1 -->
     <div class="card" id="card1">
         <img src="../icon/volunteer/logo4.png" alt="Logo 1" class="logo">
@@ -140,6 +144,46 @@
 </div>
 </div>
 
+ <!-- Volunteer Start -->
+ <div class="volunteer" data-parallax="scroll" data-image-src="img/volunteer.jpeg">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="volunteer-form">
+                    <form>
+                        <div class="control-group">
+                            <input type="text" class="form-control" placeholder="Name" required="required" />
+                        </div>
+                        <div class="control-group">
+                            <input type="email" class="form-control" placeholder="Email" required="required" />
+                        </div>
+                        <div class="control-group">
+                            <textarea class="form-control" placeholder="Why you want to become a volunteer?" required="required"></textarea>
+                        </div>
+                        <div>
+                            <button class="btn btn-custom" type="submit">Become a volunteer</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="volunteer-content">
+                    <div class="section-header">
+                        <p>Become A Volunteer</p>
+                        <h2>Let’s make a difference in the lives of others</h2>
+                    </div>
+                    <div class="volunteer-text">
+                        <p>
+                            It is the way of life. Perhaps you are changing the lives of those around you, and yet you are unaware of. Your smile, your voluntary work, helping a friend, etc. all this makes a difference. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Volunteer End -->
 
     
 
@@ -203,51 +247,6 @@
     crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/14a1a7dd00.js" crossorigin="anonymous"></script>
 
-
-
-<script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slide');
-
-    function showSlide(n) {
-        slides.forEach(slide => {
-            slide.style.display = 'none';
-        });
-        slides[n].style.display = 'block';
-    }
-
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-    }
-
-    // Initial slide display
-    showSlide(currentSlide);
-
-    // Automatic slideshow
-    setInterval(nextSlide, 2000); // Change slides every 2 seconds
-
-
-    function expandCard(cardId) {
-    const expandedText = document.getElementById(`expandedText`);
-    const expandedTitle = document.getElementById(`expandedTitle`);
-    const expandedDescription = document.getElementById(`expandedDescription`);
-    const card = document.getElementById(cardId);
-
-    expandedTitle.innerText = card.querySelector('h2').innerText;
-    expandedDescription.innerText = card.querySelector('p').innerText;
-    
-    const overlay = document.getElementById('overlay');
-    overlay.style.display = 'flex';
-
-    expandedText.style.display = "block";
-}
-
-function closeExpanded() {
-    const overlay = document.getElementById('overlay');
-    overlay.style.display = 'none';
-}
-</script>
 
 
 </html>
