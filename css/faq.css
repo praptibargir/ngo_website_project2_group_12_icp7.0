@@ -1,17 +1,39 @@
+.theme {
+    margin-left: 10px;
+}
 
+.theme-img {
+    height: 30px;
+    background-color: white;
+    padding: 0.5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.theme-light{
+    background-color: white;
+}
+
+
+.theme-dark{
+    background-color: black;
+    color: white;
+}
 .accordion-item{
     width: 800px;
     margin: 25px auto;
-    border-radius: none;
+    border-radius: 10px;
     
 }
 .accordion-button{
     background-color: #1082ce;
     border-radius: 10px;
+    color:azure;
+    font-size: large;
     
 }
 .accordion-body{
-    box-shadow: 0 0 20px 0 #080808;
+    box-shadow: 0 0 20px 0 #08080870;
     border-radius: 0 0 10px 10px;
 }
 
