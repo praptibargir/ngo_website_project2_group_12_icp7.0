@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: row;
     height: 400px;
-    width: 900px;
+    width: 500px;
     border: #f0c14a 2px solid ;
     margin:30px 400px;
+    
     box-shadow:0px 20px 10px 2px rgb(138, 136, 136);
     
- }
+}
  .each-branch:hover{
      transform: scale(1.15);
  }
@@ -66,3 +67,15 @@
      color: #131212;
      margin:5px
  }
+
+ .each-branch1{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 500px;
+    border: #f0c14a 2px solid ;
+    margin:30px 400px;
+    display: inline-block;
+    box-shadow:0px 20px 10px 2px rgb(138, 136, 136);
+    
+}
