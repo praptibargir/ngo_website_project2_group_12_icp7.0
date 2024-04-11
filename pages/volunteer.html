@@ -52,6 +52,10 @@
                 </ul>
             </div>
             <button type="button" class="btn btn-outline-warning">Login/Register</button>
+            <div class="theme">
+                <img src="images/light.png" class="theme-img" id="light" onclick="lightmode()" />
+                <img src="images/dark.png" class="theme-img" id="dark" onclick="darkmode()" />
+            </div>
         </div>
     </nav>
     <!--End of header-->
@@ -73,12 +77,12 @@
     <!-- Page Header End -->
 <div class="container1">
     <div id="slideshow-container" class="ss">
-        <div class="slide" alt="img"><img src="../images/volunteer/slideshow6.webp" alt="Image 1" height="400px" width="600px"></div>
-        <div class="slide" alt="img"><img src="../images/volunteer/slideshow4.avif" alt="Image 2" height="400px" width="600px"></div>
-        <div class="slide" alt="img"><img src="../images/volunteer/slideshow3.webp" alt="Image 3" height="400px" width="600px"></div>
-        <div class="slide" alt="img"><img src="../images/volunteer/slideshow5.jpg" alt="Image 4" height="400px" width="600px"></div>
-        <div class="slide" alt="img"><img src="../images/volunteer/slideshow1.jpg" alt="Image 5" height="400px" width="600px"></div>
-        <div class="slide" alt="img"><img src="../images/volunteer/slideshow2.jpeg" alt="Image 6" height="400px" width="600px"></div>
+        <div class="slide"><img src="../images/volunteer/slideshow6.webp" alt="Image 1" height="400px" width="600px"></div>
+        <div class="slide"><img src="../images/volunteer/slideshow1.jpg" alt="Image 2" height="400px" width="600px"></div>
+        <div class="slide"><img src="../images/volunteer/slideshow2.jpeg" alt="Image 3" height="400px" width="600px"></div>
+        <div class="slide"><img src="../images/volunteer/slideshow3.webp" alt="Image 4" height="400px" width="600px"></div>
+        <div class="slide"><img src="../images/volunteer/slideshow4.avif" alt="Image 5" height="400px" width="600px"></div>
+        <div class="slide"><img src="../images/volunteer/slideshow5.jpg" alt="Image 6" height="400px" width="600px"></div>
     </div>
     <div class="text-container">
         <b><h2 class="text">Join Us In The Journey Of Spreading </h2></b>
@@ -89,7 +93,6 @@
 
 <b><span class="benefits">Benefits Of Joining Us!</span></b>
 <div class="card-container">
- 
     <!-- Card 1 -->
     <div class="card" id="card1">
         <img src="../icon/volunteer/logo4.png" alt="Logo 1" class="logo">
@@ -97,7 +100,6 @@
         <p>Work setting that prioritizes family, with remote options and flexible hours.</p>
         <button class="learn-more" onclick="expandCard('card1')">Learn More</button>
     </div>
-    <!-- Continue with similar structure for other cards -->
     <!-- Card 2 -->
     <div class="card" id="card2">
         <img src="../icon/volunteer/logo2.png" alt="Logo 2" class="logo">
@@ -116,13 +118,13 @@
     <div class="card" id="card4">
         <img src="../icon/volunteer/logo1.png" alt="Logo 4" class="logo">
         <h2>Paid Leave</h2>
-        <p>Take advantage of paid breaks and parental leave to support your well-being.</p>
+        <p>Take advantage of paid sabbaticals and parental leave to support your well-being.</p>
         <button class="learn-more" onclick="expandCard('card4')">Learn More</button>
     </div>
     <!-- Card 5 -->
     <div class="card" id="card5">
         <img src="../icon/volunteer/logo5.png" alt="Logo 5" class="logo">
-        <h2>Travel Policies</h2>
+        <h2>Travel Policy</h2>
         <p>Explore opportunities to travel and visit our nonprofit partners around the world.</p>
         <button class="learn-more" onclick="expandCard('card5')">Learn More</button>
     </div>
@@ -135,22 +137,21 @@
     </div>
 </div>
 
-<!-- Expanded Section -->
+<!-- Description Overlay -->
 <div class="overlay" id="overlay">
-    <div class="expanded-text" id="expandedText">
-    <button class="close-btn" onclick="closeExpanded()">X</button>
-    <h2 id="expandedTitle"></h2>
-    <p id="expandedDescription"></p>
+    <div class="description-card" id="descriptionCard">
+        <button class="close-btn" onclick="closeOverlay()">X</button>
+        <h2 id="overlayTitle"></h2>
+        <p id="overlayContent"></p>
+    </div>
 </div>
-</div>
-
  <!-- Volunteer Start -->
  <div class="volunteer" data-parallax="scroll" data-image-src="img/volunteer.jpeg">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5">
                 <div class="volunteer-form">
-                    <form>
+                    <form action="#" onsubmit="showAlert(); return false;">
                         <div class="control-group">
                             <input type="text" class="form-control" placeholder="Name" required="required" />
                         </div>
