@@ -1,0 +1,72 @@
+.theme {
+    margin-left: 10px;
+    
+}
+
+.theme-img {
+    height: 30px;
+    background-color: white;
+    padding: 0.5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.theme-light{
+    background-color: white;
+    
+}
+
+
+.theme-dark{
+    background-color: black;
+    color: white;
+}
+.problem{
+    height: 100px;
+    width: 100px;
+}
+.accordion-item{
+    width: 800px;
+    margin: 25px auto;
+    border-radius: 10px;
+    
+}
+.accordion-button{
+    background-color: #1082ce9e;;
+    border-radius: 10px;
+    color:azure;
+    font-size: large;
+    
+}
+.accordion-body{
+    box-shadow: 0 0 20px 0 #08080870;
+    border-radius: 0 0 10px 10px;
+}
+.search-bar{
+    width: 90%;
+    height: 57px;
+    margin: 20px 20px;
+    color: black;
+            text-align: center;
+            
+}
+
+.inputs{
+    background-color:whitesmoke;
+
+
+}
+.inputs:hover {
+    background-color: #1082ce9e;
+
+
+}
+.searchbtn{
+    margin-left: -20px;
+    margin-bottom: 6.5px;
+    width: 60px;
+    height: 57px;
+    color: white;
+   background-color:  #fbc108;
+}
+
