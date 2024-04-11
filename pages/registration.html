@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regitration Page</title>
+    <title>Registration Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="/css/registration.css">
+<script src="/js/registration.js"></script>
 </head>
 
 <body>
@@ -48,23 +50,68 @@
                 </li>
             </ul>
         </div>
-        <button type="button" class="btn btn-outline-warning">Login/Register</button>
+        <button type="button" class="btn btn-outline-success">Login/Register</button>
     </div>
 </nav>
 <!--End of header-->
+
+<h1 class="main-heading">UNITY UPLIFT REGISTRATION FORM</h1>
+<div class="main-container">
+    <h1 class="First-Heading">UNITY UPLIFT</h1>
+     <h3 class="Second-Heading">Enter Your Registration Details</h3>
+     <form action="">
+        <label for=" Applicant-organization" class="label-name">Name of Applicant organization :</label>
+        <input type="text" id="applicant-name" name="applicant-name" class="input-name" placeholder="Enter Name of Applicant Organization" required>
+
+        <label for="PAN-no" class="label-name">PAN Number of Applicant Organization :</label>
+        <input type="number" id="PAN-no" name="PAN-no" class="input-name" placeholder="Enter PAN Number of Applicant Organization" required>
+
+        <label for="head-name" class="label-name">Name of the Head of the Organization :</label>
+        <input type="text" id="head-name" name="head-name" class="input-name" placeholder="Enter Name of the Head of Organization" required>
+
+        <label for="gender" class="label-name">Gender :</label>
+        <select name="select" id="select" class="input-name">
+            <option value="select" >Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Male">Female</option>
+            <option value="Male">Other</option>
+        </select>
+
+        <label for="email" class="label-name">Email ID :</label>
+        <input type="email" id="email" name="email" class="input-name" placeholder="Enter Your Email ID" required>
+
+        <label for="password" class="label-name">Password</label>
+        <input type="password" id="password" name="password" class="input-name" placeholder="Enter Your Password" required>
+         
+        <label for="mobile" class="label-name">Mobile NO. :</label>
+        <input type="number" id="mobile-no" name="mobile-no" class="input-name" placeholder="Enter Your Mobile NO." required>
+
+        <input type="text" id="field" name="field" class="input-name field" placeholder="Please fill all Marked Mandatory Fields"> 
+
+        <button type="button" class="btn btn-outline-success btn-registration" onclick="validation()">
+            Submit
+        </button>
+     </form>
+</div>
+
+
 <!--footer-->
-<div class="bg-dark bg-gradient text-light p-4 fixed-bottom">
+<div class="bg-dark bg-gradient text-light p-4">
     <div class="row">
         <div class="col-lg-3 my-auto">
-            <img class="d-block" src="../icon/logo-rectangle.PNG" />
+            <img class="d-block" src="/icon/logo-rectangle.PNG" />
             <p class="pt-3">Get in Touch with us:</p>
             <div>
-                <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fs-2 p-2 pt-0" style="color: #ffffff;"></i></a>
+                <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fs-2 p-2 pt-0"
+                        style="color: #ffffff;"></i></a>
                 <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fs-2 p-2 pt-0"
                         style="color: #ffffff;"></i></a>
-                <a href="https://www.instagram.com/roadtocode4u/"><i class="fa-brands fa-instagram fs-2 p-2 pt-0" style="color: #ffffff;"></i></a>
-                <a href="https://twitter.com/roadtocode4u"><i class="fa-brands fa-x-twitter fs-2 p-2 pt-0" style="color: #ffffff;"></i></a>
-                <a href="mailto:suraj@roadtocode.org"><i class="fa-regular fa-envelope fs-2 p-2 pt-0" style="color: #ffffff;"></i></a>
+                <a href="https://www.instagram.com/roadtocode4u/"><i class="fa-brands fa-instagram fs-2 p-2 pt-0"
+                        style="color: #ffffff;"></i></a>
+                <a href="https://twitter.com/roadtocode4u"><i class="fa-brands fa-x-twitter fs-2 p-2 pt-0"
+                        style="color: #ffffff;"></i></a>
+                <a href="mailto:suraj@roadtocode.org"><i class="fa-regular fa-envelope fs-2 p-2 pt-0"
+                        style="color: #ffffff;"></i></a>
             </div>
         </div>
         <div class="col-lg-4 my-auto">
@@ -76,13 +123,13 @@
         <div class="col-lg-2">
             <p class="fs-4"><u>Important links:</u></p>
             <ul>
-                <li><a href="../index.html" class="text-decoration-none text-light">Home</a></li>
-                <li><a href="../pages/aboutus.html" class="text-decoration-none text-light">About</a></li>
-                <li><a href="../pages/ourwork.html" class="text-decoration-none text-light">Our Work</a></li>
-                <li><a href="../pages/donation.html" class="text-decoration-none text-light">Donation</a></li>
-                <li><a href="../pages/volunteer.html" class="text-decoration-none text-light">Volunteer</a></li>
-                <li><a href="../pages/contact.html" class="text-decoration-none text-light">Contact</a></li>
-                <li><a href="../pages/faq.html" class="text-decoration-none text-light">FAQ</a></li>
+                <li><a href="index.html" class="text-decoration-none text-light">Home</a></li>
+                <li><a href="pages/aboutus.html" class="text-decoration-none text-light">About</a></li>
+                <li><a href="pages/ourwork.html" class="text-decoration-none text-light">Our Work</a></li>
+                <li><a href="pages/donation.html" class="text-decoration-none text-light">Donation</a></li>
+                <li><a href="pages/volunteer.html" class="text-decoration-none text-light">Volunteer</a></li>
+                <li><a href="pages/contact.html" class="text-decoration-none text-light">Contact</a></li>
+                <li><a href="pages/faq.html" class="text-decoration-none text-light">FAQ</a></li>
             </ul>
         </div>
 
@@ -93,15 +140,15 @@
             <a href="tel:8805803087" class="text-decoration-none text-light"><i class="fa-solid fa-phone"
                     style="color: #ffffff;"></i> +91 88058 03087</a>
             <br />
-            <a href="tel:7821011976" class="text-decoration-none text-light"><i class="fa-solid fa-phone"
+            <a href="tel:7821011976" class="text-decoration-none text-light "><i class="fa-solid fa-phone"
                     style="color: #ffffff;"></i> +91 78210 11976</a><br />
-            <a href="mailto:suraj@roadtocode.org" class="text-decoration-none text-light"><i class="fa-solid fa-envelope"
-                    style="color: #ffffff;"></i>
+            <a href="mailto:suraj@roadtocode.org" class="text-decoration-none text-light"><i
+                    class="fa-solid fa-envelope" style="color: #ffffff;"></i>
                 suraj@roadtocode.org</a>
         </div>
     </div>
     <hr />
-    <p class="text-center">Copyright © 2024 <a href="../index.html" class="link-warning text-decoration-none">Unity
+    <p class="text-center">Copyright © 2024 <a href="index.html" class="link-warning text-decoration-none">Unity
             Uplift</a></p>
 </div>
 <!--end of footer-->
@@ -111,5 +158,6 @@
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/14a1a7dd00.js" crossorigin="anonymous"></script>
+
 
 </html>
