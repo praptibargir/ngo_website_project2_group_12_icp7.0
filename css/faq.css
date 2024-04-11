@@ -31,7 +31,7 @@
 }
 .accordion-item{
     width: 800px;
-    margin: 30px auto;
+    margin: 50px auto;
     border-radius: 15px;
     
     border: 3px solid #fbc108;
@@ -46,9 +46,8 @@ border-radius: 15px;
 }
 .accordion-body{
     box-shadow: black 25px;
-    background-color: rgba(211, 211, 211, 0.366);
-    border-radius: 15px
-  
+    background-color: rgba(211, 211, 211, 0.548);
+    border-radius: 15px;
 }
 .search-bar{
     width: 90%;
