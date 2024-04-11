@@ -26,7 +26,9 @@
     height: 100px;
     width: 100px;
 }
-
+.accordian{
+   
+}
 .accordion-item{
     width: 800px;
     margin: 30px auto;
@@ -40,13 +42,13 @@
 border-radius: 15px;
     color:black;
     font-size: large;
-    
-
+    --bs-accordion-active-bg: white;
 }
 .accordion-body{
     box-shadow: black 25px;
-    background-color: lightgrey;
+    background-color: rgba(211, 211, 211, 0.366);
     border-radius: 15px
+  
 }
 .search-bar{
     width: 90%;
@@ -63,7 +65,7 @@ border-radius: 15px;
 
 }
 .inputs:hover {
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.548);
 
 
 }
