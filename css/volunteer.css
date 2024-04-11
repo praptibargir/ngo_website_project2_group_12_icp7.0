@@ -77,9 +77,13 @@
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(127, 36, 141, 0.3); /* lighter shade of #7f248d */
 }
+<<<<<<< HEAD
 .card h2 {
     color: #1082ce;
 }
+=======
+
+>>>>>>> 50a6dee58086c620a7d11338b9bd32de9e4788d9
 .card p {
     color:black;
 }

@@ -97,6 +97,10 @@ body{
     display: none;
 }
 
+li:hover{
+    color: #fbc108;
+}
+
 @media (max-width: 991.98px) {
     .page-header {
         padding: 60px 0;
@@ -125,8 +129,10 @@ body{
     }
 }
 
-
-
-li:hover{
-    color: #fbc108;
+@media (max-width: 350px){    
+    .footer-logo{
+        height: 40px;
+    }
 }
+
+

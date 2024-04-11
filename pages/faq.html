@@ -9,9 +9,12 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/faq.css" />
+    <script src="../js/home.js"></script>
+    <script src="../js/faq.js"></script>
+  
 </head>
 
-<body>
+<body id="body">
     <!--Header-->
     <nav class="navbar navbar-expand-lg bg-body-light shadow ">
         <div class="container-fluid">
@@ -50,8 +53,13 @@
                 </ul>
             </div>
             <button type="button" class="btn btn-outline-warning">Login/Register</button>
+            <div class="theme">
+              <img src="../images/light.png" class="theme-img" id="light" onclick="lightmode()" />
+              <img src="../images/dark.png" class="theme-img" id="dark" onclick="darkmode()" />
+          </div>
         </div>
-    </nav>
+      </nav>
+    
     <!--End of header-->
 
     <!-- Page Header Start -->
@@ -71,6 +79,12 @@
     <!-- Page Header End -->
 
     <!--faq content-->
+   
+   
+
+
+    <h2 class="text-center fs-1 colour-purple">FAQ's<img src="../images/faq/question-mark.png"class="problem mb-5" > </h2>
+    <h3 class="fs-3 text-center colour-blue mb-3 ">Frequently Asked Questions  </h3>
 
     <div class="accordion " id="accordionPanelsStayOpenExample">
         <div class="accordion-item">
@@ -129,7 +143,7 @@
           </h2>
           <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
             <div class="accordion-body">
-              Absolutely. We issue receipts for all donations made to My Sparsh Foundation. Ensure you provide accurate details during the donation process to receive your receipt promptly.
+              Absolutely. We issue receipts for all donations made to Unity-Uplift. Ensure you provide accurate details during the donation process to receive your receipt promptly.
             </div>
           </div>
         </div>
@@ -167,11 +181,45 @@
           <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
             <div class="accordion-body">
               Absolutely. We issue receipts for all donations made to My Foundation. Ensure you provide accurate details during the donation process to receive your receipt promptly.
-
             </div>
           </div>
         </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+              Are donations tax-deductible?
+
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Yes, donations made to My Foundation are eligible for tax deductions as per applicable laws. Check your donation receipt for details and consult with a tax professional for specific advice.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+              Can my organization partner with Unity-Uplift?
+
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              We welcome collaborations with like-minded organizations. If your organization is interested in partnering with us on projects or campaigns, please reach out through the<strong>"Partnerships"</strong>  section.
+            </div>
+          </div>
+        </div>
+        <span class="search-bar ">
+          <input class=" p-2 search-bar border  rounded-start-pill text-black inputs" input"type="text" placeholder="Ask your questions here?" aria-label="search" id="info" >
+          <button type="submit" class="btn rounded-end-pill border border searchbtn" onclick="reset()">ASK</button>
+          <p class="ans" id="ans"></p>
+      </span>
     </div>
+
+
+    
         
 
 
