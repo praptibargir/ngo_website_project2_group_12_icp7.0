@@ -13,6 +13,7 @@ body {
 .brand-name {
     display: flex;
     flex-direction: row;
+
 }
 .head-temp{
     position: relative;
@@ -21,6 +22,9 @@ body {
 .temple-card img{
     width: 100%;
     height: 500px;
+
+
+    
 }
 
 .tab-titles {

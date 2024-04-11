@@ -118,6 +118,61 @@ a{
     justify-content: center;
 }
 
+.user-card{
+    background-color: #F2F4F4;
+    width: 530px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    height: 290px;
+    display: block;
+    margin: 10px auto;
+}
+.user-profile{
+    display: block;
+    border-radius: 50%;
+    margin: 5px auto;
+    height: 80px;
+    margin-left: 0;
+}
+.user-name{
+    color: black;
+    font-size: 20px;
+    margin: 18px auto;
+    padding: 10px;
+    margin-top: -85px;
+    margin-left: 90px;
+}
+.user-name-email{
+    color: black;
+    font-size: 15px;
+    margin: 18px auto;
+    padding: 10px;
+    margin-top: -34px;
+    margin-left: 90px;
+}
+.review-rating-img
+{
+    margin-top: -240px;
+    margin-left: 350px;
+}
+.review-text{
+    font-size: 18px;
+    margin-top: 50px;
+    
+}
+.rating-star{
+    margin-top: -240px;
+    margin-left: 350px;
+}
+.user-card:hover{
+    background-color: darkgrey;
+    box-shadow: 0 0 3px 1px grey;
+    transition: 0.3s;
+}
+.small-txt{
+    font-weight: bold;
+}
+
 @media screen and (max-width:1100px) and (min-width:700px) {
     .cards {
         display: flex;

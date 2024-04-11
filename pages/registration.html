@@ -55,12 +55,13 @@
 </nav>
 <!--End of header-->
 
-<h1 class="main-heading">UNITY UPLIFT REGISTRATION FORM</h1>
+<h1 class="main-heading">Unity Uplift Registration Form</h1>
+<div class="registration">
 <div class="main-container">
-    <h1 class="First-Heading">UNITY UPLIFT</h1>
+    <h1 class="First-Heading">Unity Uplift</h1>
      <h3 class="Second-Heading">Enter Your Registration Details</h3>
      <form action="">
-        <label for=" Applicant-organization" class="label-name">Name of Applicant organization :</label>
+        <label for=" Applicant-organization" class="label-name">Name of Applicant Organization :</label>
         <input type="text" id="applicant-name" name="applicant-name" class="input-name" placeholder="Enter Name of Applicant Organization" required>
 
         <label for="PAN-no" class="label-name">PAN Number of Applicant Organization :</label>
@@ -88,12 +89,15 @@
 
         <input type="text" id="field" name="field" class="input-name field" placeholder="Please fill all Marked Mandatory Fields"> 
 
-        <button type="button" class="btn btn-outline-success btn-registration" onclick="validation()">
+        <button type="button" class="btn btn-outline-success btn-registration" onclick="validate()">
             Submit
+        </button>
+        <button type="button" class="btn btn-outline-success btn-registration" onclick="reset()">
+            Reset
         </button>
      </form>
 </div>
-
+</div>
 
 <!--footer-->
 <div class="bg-dark bg-gradient text-light p-4">
@@ -161,3 +165,6 @@ crossorigin="anonymous"></script>
 
 
 </html>
+
+
+
