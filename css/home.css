@@ -128,3 +128,42 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.gallery-img{
+    height: 300px;
+    display: block;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.gallery-card
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 30px;
+}
+
+.gallery-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.selector{
+    border:solid 1x black;
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 5px;
+    margin: 2px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
