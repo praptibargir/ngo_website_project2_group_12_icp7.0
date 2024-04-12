@@ -42,7 +42,7 @@ body {
 }
 
 .tab-contents.active-tab {
-    display: block;
+    display:block;
 }
 
 .temple-card-box {
@@ -57,7 +57,7 @@ body {
   }
 
 .temple-card {
-    width: 45%;
+    width: 30%;
     box-shadow: 0px 0px 10px 4px #a9a8a8;
     border: 2px solid #a9a8a8;
     background: #FFF;
@@ -130,5 +130,19 @@ body {
         font-size: 13px;
     }
 }
-
+.applycss{
+    width:60%;
+    height: 30%;
+    margin: 10px auto;
+    
+}
+.carousel-caption{
+    font-size: 25px;
+    font-weight: 800;
+  
+}
+.slide{
+    background-color: aqua;
+   
+}
   

@@ -50,7 +50,7 @@
                     </li>
                 </ul>
             </div>
-            <button type="button" class="btn btn-outline-success">Login/Register</button>
+            <a href="pages/login.html"><button type="button" class="btn btn-outline-success">Login/Register</button></a>
             <div class="theme">
                 <img src="images/light.png" class="theme-img" id="light" onclick="lightmode()" />
                 <img src="images/dark.png" class="theme-img" id="dark" onclick="darkmode()" />
@@ -193,27 +193,36 @@
         </div>
     </div>
 
-    <script>
-        const targetNumbers = [20, 200,50,250];
-        const counterElements = [
-            document.getElementById('counter1'),
-            document.getElementById('counter2'),
-            document.getElementById('counter3'),
-            document.getElementById('counter4')
-        ];
-        function updateCounter(index) {
-            let count = parseInt(counterElements[index].innerText);
-            if (count < targetNumbers[index]) {
-                count++;
-                counterElements[index].innerText = count;
-                setTimeout(() => updateCounter(index), 10);
-            }
-        }
-        for (let i = 0; i < targetNumbers.length; i++) {
-            updateCounter(i);
-        }
-    </script>
     <!--end of counter section-->
+
+    <!--Upcoming-->
+    <h2 class="text-center fs-1 colour-purple">Events</h2>
+    <h3 class="fs-3 text-center colour-blue mb-3">Our Upcoming Events</h3>
+    <div class="countdown-card section-colour">
+        
+        <div class="event">
+            <div>
+                <img src="images/home/ue.webp" class="gallery-img" />
+            </div>
+            <div>
+                <p class="fs-6 scheme-text">It focuses on enhancing the foundational learning skills of students at the primary
+                    level, emphasizing
+                    early grade reading and writing proficiency, especially in languages other than the mother tongue.
+                    The
+                    initiative aims to improve the quality of learning outcomes, reduce dropout rates, and promote
+                    innovative teaching methodologies.</p>
+                <div class=" schedule">
+                    <div class="bg-warning p-2">
+                        <p class="count">Event Schedule:<br /> 25<sup>th</sup> April 2024 </p>
+                    </div>
+                    <div class="bg-warning p-2">
+                        <p class="count">Time left:<br /> <span id="countdown"></span> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of upcoming-->
 
     <!--work section-->
     <h2 class="text-center fs-1 colour-purple">Our Work</h2>
@@ -255,27 +264,29 @@
     <!--testimonial-->
     <h2 class="text-center fs-1 colour-purple">Testimonials</h2>
     <h3 class="fs-3 text-center colour-blue mb-3">Read our success stories</h3>
-    <div class="user-card">
-        <img src="https://i.pravatar.cc/100?img=1" class="user-profile">
-        <p class="user-name">Joana B </p>
-        <p class="user-name-email">@joanaB01@gmail.com</p>
-        <p class="review-text">
-            Very good supplement for beginners in pocket friendly price and also brings good results.
-            <br> <br>
-        <p class="small-txt">Oct 8, 2022</p>
-        <div class="rating-star">
-            <i class="fa-solid fa-star" style="color: #f2be02;"></i>
-            <i class="fa-solid fa-star" style="color: #f2be02;"></i>
-            <i class="fa-solid fa-star" style="color: #f2be02;"></i>
-            <i class="fa-solid fa-star" style="color: #f2be02;"></i>
-            <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-10">
+                <div class="testimonial-card text-center section-colour">
+                    <i class="fa fa-quote-left quote-icon colour-blue" aria-hidden="true"></i>
+                    <p class="testimonial-text">Unity Uplift's website is a testament to their unwavering commitment to
+                        social change. Their projects have transformed countless lives, and I'm proud to support such a
+                        noble cause.</p>
+                    <p class="author-name">Sakshant Patil</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-10">
+                <div class="testimonial-card text-center section-colour">
+                    <i class="fa fa-quote-left quote-icon colour-blue" aria-hidden="true"></i>
+                    <p class="testimonial-text">Unity Uplift's website is a treasure trove of inspiration. Their
+                        dedication to empowering underprivileged communities is evident in every story and project
+                        showcased. Truly a beacon of hope in today's world.</p>
+                    <p class="author-name">Reema Singh</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="slider">
-        
-    </div>
     <!--end of testimonial-->
-
 
     <!--footer-->
     <div class="bg-dark bg-gradient text-light p-4">
@@ -334,6 +345,41 @@
                 Uplift</a></p>
     </div>
     <!--end of footer-->
+
+    <script>
+
+        const targetNumbers = [20, 200, 50, 250];
+        const counterElements = [
+            document.getElementById('counter1'),
+            document.getElementById('counter2'),
+            document.getElementById('counter3'),
+            document.getElementById('counter4')
+        ];
+        function updateCounter(index) {
+            let count = parseInt(counterElements[index].innerText);
+            if (count < targetNumbers[index]) {
+                count++;
+                counterElements[index].innerText = count;
+                setTimeout(() => updateCounter(index), 10);
+            }
+        }
+        for (let i = 0; i < targetNumbers.length; i++) {
+            updateCounter(i);
+        }
+
+        const eventDate = new Date('2024-04-25T00:00:00+05:30');
+        function updateCountdown() {
+            const currentDate = new Date();
+            const difference = eventDate - currentDate;
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+            document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    </script>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

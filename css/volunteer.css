@@ -1,3 +1,23 @@
+.theme {
+    margin-left: 10px;
+}
+
+.theme-img {
+    height: 30px;
+    background-color: white;
+    padding: 0.5px;
+    border-radius: 50%;
+}
+
+.theme-light{
+    background-color: white;
+}
+
+.theme-dark{
+    background-color: black;
+    color: white;
+}
+
 .container1{
     display: flex;
     justify-content: space-between;
@@ -19,15 +39,15 @@
     text-align: left;
     
 }
+
 .text{
     margin-top: 17%;
+    color: #7f248d;
 }
 .text2{
     color: #1082ce;
 }
-.text-container h2{
-    color: #7f248d;
-}
+
 .text-container p{
     font-size: larger;
     color: #000000;
@@ -35,20 +55,19 @@
 }
 
 .card-container {
+    margin-top: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
- 
+    gap: 60px;
+   
 }
 .card {
-    border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(127, 36, 141, 0.3); /* lighter shade of #7f248d */
     overflow: hidden;
     width: 300px;
     padding: 20px;
-    margin: 20px;
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     position: relative;
@@ -61,63 +80,73 @@
     color:#1082ce;
 }
 
+.card h2 {
+    color: #1082ce;
+}
+
 .card p {
-    color: #000000;
+    color:black;
 }
 .logo {
     width: 50px;
     height: 50px;
     margin-bottom: 15px;
-    margin-left:38%;
+    margin-left: 38%;
 }
 .learn-more {
-    background-color: #ffffff;;
-    color: #13632e;
-    border: 2px solid #13632e;
+    background-color:#fff;
+    color:#1b6d18 ;
+    border: none;
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 15px;
     transition: background-color 0.3s ease-in-out;
+    border: #1b6d18 solid 2px;
 }
 .learn-more:hover {
-    background-color: #13632e; /* darker shade for hover effect */
-    color: #fff;
-}
-.expanded {
-    transform: scale(1.1);
-    z-index: 1;
+    background-color:#1b6d18;
+    color:#fff ; 
+   
 }
 .overlay {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-.expanded-text {
+    z-index: 2;
     display: none;
-    padding: 20px;
+}
+.description-card {
     background-color: #fff;
     border-radius: 8px;
-    width: 80%;
-    max-width: 600px;
+    padding: 20px;
+    width: 70%;
+    max-width: 800px;
+    overflow-y: auto;
 }
-.expanded-text h2{
-    color: #f1471d;;
+.overlay h2{
+    color:  #f1471d;
 }
-.expanded-text p{
+.overlay p{
     color: #000000;
 }
-
 .close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
+    background-color: #7f248d;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
     cursor: pointer;
 }
 /******** Volunteer CSS ********/
@@ -147,17 +176,18 @@
 }
 
 .volunteer .volunteer-content .section-header h2 {
-    color: #ffffff;
+    color: #000000;
 }
 
 .volunteer .volunteer-text p {
-    color: #ffffff;
+    color: #000000;
     font-size: 18px;
 }
 
 .volunteer .volunteer-form {
     padding: 90px 30px;
-    background: #FDBE33;
+    background: #ffffff;
+    margin-bottom: 0%;
 }
 
 .volunteer .volunteer-form .control-group {
@@ -166,10 +196,10 @@
 
 .volunteer .volunteer-form .form-control {
     height: 60px;
-    color: #ffffff;
+    color: #000000;
     padding: 0 15px;
     border-radius: 0;
-    border: 1px solid #ffffff;
+    border: 1px solid #000000;
     background: transparent;
 }
 
@@ -179,8 +209,9 @@
 }
 
 .volunteer .volunteer-form .form-control::placeholder {
-    color: #ffffff;
+    color: #020202;
     opacity: 1;
+    
 }
 
 .volunteer .volunteer-form .form-control:-ms-input-placeholder,
@@ -192,19 +223,26 @@
     padding: 15px 0;
     width: 100%;
     height: 60px;
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
     box-shadow: inset 0 0 0 0 #ffffff;
 }
 
 .volunteer .volunteer-form .btn.btn-custom:hover {
-    color: #FDBE33;
-    border: 1px solid #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
     box-shadow: inset 0 0 0 30px #ffffff;
+    background-color: #000000;
 }
 .section-header p{
     font-size: xx-large;
     font-weight: 500;
+    color: #ffffff;
+}
+.section-header h2{
+    color: #ffffff;
+}
+.volunteer-text {
     color: #ffffff;
 }
 .benefits{
