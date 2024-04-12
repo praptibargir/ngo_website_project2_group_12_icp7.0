@@ -1,7 +1,6 @@
 function validate() {
     let username = document.getElementById("applicant-name").value;
     let PanNO = document.getElementById("PAN-no").value;
-    let HeadName = document.getElementById("head-name").value;
     let Email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
     let mobileNo = document.getElementById("mobile-no").value;
@@ -14,10 +13,6 @@ function validate() {
         alert("Please Enter Your PAN Number");
         return false;
     }
-    else if(HeadName === null || HeadName === ""){
-        alert("Please Enter Name of Head Organisation");
-        return false;
-    }
     else if(Email === "" || !Email.includes('@')){
         alert("Please Enter a valid E-Mail Address");
         return false;
@@ -28,6 +23,10 @@ function validate() {
     }
     else if(mobileNo === ""){
         alert("Enter MObile Number");
+        return false;
+    }
+    else if(username != "" || PanNO != "" || Email != "" || password != "" || mobileNo != "" ){
+        alert("All Information Should be Submitted");
         return false;
     }
 }
