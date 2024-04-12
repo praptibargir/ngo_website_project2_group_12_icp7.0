@@ -678,6 +678,9 @@ a{
 }
 
 @media screen and (max-width:1100px) and (min-width:700px) {
+    .Successful-head h2{
+        font-size: 25px;
+    }
     .cards {
         display: flex;
         flex-direction: column;
@@ -699,6 +702,9 @@ a{
 }
 
 @media screen and (max-width:700px) and (min-width:460px) {
+    .Successful-head h2{
+        font-size: 25px;
+    }
     .cards {
         display: flex;
         flex-direction: column;
@@ -724,6 +730,9 @@ a{
 }
 
 @media screen and (max-width:460px) and (min-width:340px) {
+    .Successful-head h2{
+        font-size: 25px;
+    }
     .cards {
         display: flex;
         flex-direction: column;
@@ -757,6 +766,9 @@ a{
 
 
 @media screen and (max-width:340px) {
+    .Successful-head h2{
+        font-size: 25px;
+    }
     .cards {
         display: flex;
         flex-direction: column;
@@ -819,4 +831,27 @@ a{
 .active-1 {
     color: #ffb175 !important;
     transform: scale(1.2) !important;
+}
+.Successful-head h2{
+    width: 560px;
+    padding-bottom: 10px;
+    margin: 40px auto;
+    color: #7f248d;
+    font-weight: 800;
+    font-size: 38px;
+    border-bottom: 3px solid #1082ce;
+}
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .Successful-head h2 {
+        font-size: 32px;
+        max-width: 90%;
+    }
+}
+
+/* Media Query for even smaller screens */
+@media only screen and (max-width: 576px) {
+    .Successful-head h2 {
+        font-size: 28px;
+    }
 }

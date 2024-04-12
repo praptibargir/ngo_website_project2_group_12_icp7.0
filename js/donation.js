@@ -209,3 +209,38 @@ const stars = document.querySelectorAll(".stars i");
             subheading.innerText = "event 5";
             text.innerText = "Hygine is very necessary. Specially for women, menstrunal hygine is very important for a healthy living. ";
         }
+
+
+        // donation
+        function donate(projectId) {
+            let donationAmount = prompt("How much do you want to donate?");
+            if (donationAmount != null && donationAmount != "") {
+              
+                let donation = parseFloat(donationAmount);
+        
+                let totalDonationElement = document.querySelector('.progress-card:nth-child(' + projectId + ') .colour-red');
+                let currentTotal = parseFloat(totalDonationElement.textContent.replace('Total Donation:', '').trim());
+                let newTotal = currentTotal + donation;
+                totalDonationElement.textContent = 'Total Donation:' + newTotal;
+        
+               
+                let progressBar = document.querySelector('.progress-card:nth-child(' + projectId + ') .progress-bar-fill');
+                let currentWidth = parseFloat(progressBar.style.width);
+                let currentFunded = parseFloat(document.querySelector('.progress-card:nth-child(' + projectId + ') .funded-text').textContent.replace('% Funded', ''));
+                
+                
+                let newWidth = ((currentWidth / currentFunded) * (currentFunded + (donation / newTotal) * 100)).toFixed(2);
+                let newFunded = ((currentFunded + (donation / newTotal) * 100)).toFixed(0);
+        
+                
+                if (newFunded > 100) {
+                    newFunded = 100;
+                }
+        
+                
+                progressBar.style.width = newWidth + '%';
+                document.querySelector('.progress-card:nth-child(' + projectId + ') .funded-text').textContent = newFunded + '% Funded';
+            }
+        }
+        
+        
