@@ -88,3 +88,11 @@
     font-size: xx-large;
     margin-left: 36%;
 }
+ 
+
+@media screen and (max-width:600px){
+    .bulb-container{
+        width: 80%;
+    }
+}
+    
