@@ -596,11 +596,6 @@ a{
     cursor: pointer;
 }
 
-.active {
-    color: #fbc108 !important;
-    transform: scale(1.2) !important;
-}
-
 .send-review-button {
     display: flex;
     justify-content: center;

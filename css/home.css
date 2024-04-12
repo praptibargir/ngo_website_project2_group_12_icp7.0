@@ -187,7 +187,11 @@ a{
     justify-content: center;
     align-items: center;
 }
-
+.test{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 @media screen and (max-width:1100px) and (min-width:700px) {
     .cards {
         display: flex;
@@ -207,7 +211,63 @@ a{
     .gallery-card{
         flex-direction: column;
     }
+    .test{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+    }
 }
+.testimonial-card {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonial-card .quote-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.testimonial-card .testimonial-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.testimonial-card .author-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.countdown-card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width:80% ;
+    text-align: center;
+}
+
+.countdown-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.count {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.event{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.timer{
+    padding: 10px 20px;
+}
+
 
 @media screen and (max-width:700px) and (min-width:460px) {
     .cards {
@@ -231,6 +291,12 @@ a{
 
     .gallery-img{
         height: 150px;
+    }
+
+    .test{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -260,6 +326,12 @@ a{
     }
     .gallery-img{
         height: 150px;
+    }
+
+    .test{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -300,5 +372,11 @@ a{
     .work-img{
         height: 50px;
         width: 50px;
+    }
+
+    .test{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
