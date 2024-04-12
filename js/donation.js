@@ -48,8 +48,8 @@ const stars = document.querySelectorAll(".stars i");
             star.addEventListener("click", () => {
                 stars.forEach((star, index2) => {
                     index1 >= index2
-                        ? star.classList.add("active")
-                        : star.classList.remove("active");
+                        ? star.classList.add("active-1")
+                        : star.classList.remove("active-1");
                 });
                 // Enable send review button if at least one star is selected
                 sendReviewButton.disabled = false;
