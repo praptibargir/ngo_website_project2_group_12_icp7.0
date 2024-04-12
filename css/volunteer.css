@@ -77,13 +77,11 @@
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(127, 36, 141, 0.3); /* lighter shade of #7f248d */
 }
-<<<<<<< HEAD
+
 .card h2 {
     color: #1082ce;
 }
-=======
 
->>>>>>> 50a6dee58086c620a7d11338b9bd32de9e4788d9
 .card p {
     color:black;
 }
@@ -176,17 +174,18 @@
 }
 
 .volunteer .volunteer-content .section-header h2 {
-    color: #ffffff;
+    color: #000000;
 }
 
 .volunteer .volunteer-text p {
-    color: #ffffff;
+    color: #000000;
     font-size: 18px;
 }
 
 .volunteer .volunteer-form {
     padding: 90px 30px;
-    background: #FDBE33;
+    background: #ffffff;
+    margin-bottom: 0%;
 }
 
 .volunteer .volunteer-form .control-group {
@@ -195,10 +194,10 @@
 
 .volunteer .volunteer-form .form-control {
     height: 60px;
-    color: #ffffff;
+    color: #000000;
     padding: 0 15px;
     border-radius: 0;
-    border: 1px solid #ffffff;
+    border: 1px solid #000000;
     background: transparent;
 }
 
@@ -208,7 +207,7 @@
 }
 
 .volunteer .volunteer-form .form-control::placeholder {
-    color: #ffffff;
+    color: #020202;
     opacity: 1;
 }
 
@@ -221,19 +220,26 @@
     padding: 15px 0;
     width: 100%;
     height: 60px;
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
     box-shadow: inset 0 0 0 0 #ffffff;
 }
 
 .volunteer .volunteer-form .btn.btn-custom:hover {
-    color: #FDBE33;
-    border: 1px solid #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
     box-shadow: inset 0 0 0 30px #ffffff;
+    background-color: #000000;
 }
 .section-header p{
     font-size: xx-large;
     font-weight: 500;
+    color: #ffffff;
+}
+.section-header h2{
+    color: #ffffff;
+}
+.volunteer-text {
     color: #ffffff;
 }
 .benefits{
