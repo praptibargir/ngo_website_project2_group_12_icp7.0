@@ -1,101 +1,192 @@
-.volunteer {
+section {
+    position: relative;
+    z-index: 3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .container {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .section-header {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .section-header h2 {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .section-header p {
+    color: #FFF;
+  }
+  
+  .row  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .contact-info {
+    width: 50%;
+  }
+  
+  .contact-info-item {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info-icon {
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  .contact-info-icon i {
+    font-size: 30px;
+    line-height: 70px;
+  }
+  
+  .contact-info-content {
+    margin-left: 20px;
+  }
+  
+  .contact-info-content h4 {
+    color: #1da9c0;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+  }
+  
+  .contact-info-content p {
+    color: #FFF;
+    font-size: 1em;
+  }
+  
+  .contact-form {
+    background-color: #fff;
+    padding: 40px;
+    width: 45%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  .contact-form h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .contact-form .input-box {
     position: relative;
     width: 100%;
-    margin: 45px 0;
-    background: rgba(0, 0, 0, .5);
-    background-image: url(../images/volunteer/volunteer.jpg);
-}
-
-.volunteer .volunteer-content {
-    padding: 30px 0 45px 0;
-}
-
-.container .volunteer{
-    display: block;
-    margin: 0 auto;
-}
-
-.container .volunteer .volunteer-content {
-    padding: 45px 30px 15px 30px;
-}
-
-.volunteer .volunteer-content .section-header {
-    margin-bottom: 30px;
-}
-
-.volunteer .volunteer-content .section-header h2 {
-    color: black;
-}
-
-.volunteer .volunteer-text p {
-    color:black;
-    font-size: 18px;
-}
-
-.volunteer .volunteer-form {
-    padding: 90px 30px;
-    background:white;
-}
-
-.volunteer .volunteer-form .control-group {
-    margin-bottom: 15px;
-}
-
-.volunteer .volunteer-form .form-control {
-    height: 60px;
-    color:black;
-    padding: 0 15px;
-    border-radius: 0;
-    border: 1px solid black;
-    background: transparent;
-}
-
-.volunteer .volunteer-form textarea.form-control {
-    height: 120px;
-    padding: 15px;
-}
-
-.volunteer .volunteer-form .form-control::placeholder {
-    color:black;
-    opacity: 1;
-}
-
-.volunteer .volunteer-form .form-control:-ms-input-placeholder,
-.volunteer .volunteer-form .form-control::-ms-input-placeholder {
-    color:black;
-}
-
-.volunteer .volunteer-form .btn.btn-custom {
-    padding: 15px 0;
+    margin-top: 10px;
+  }
+  
+  .contact-form .input-box input,
+  .contact-form .input-box textarea{
     width: 100%;
-    height: 60px;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+  }
+  
+  .contact-form .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+  }
+  
+  .contact-form .input-box input:focus ~ span,
+  .contact-form .input-box textarea:focus ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+  }
+  
+  .contact-form .input-box input[type="submit"]
+  {
+    width: 100%;
+    background:#40b93c;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #40b93c;
+    transition: 0.5s;
+  }
+  
+  .contact-form .input-box input[type="submit"]:hover
+  {
+    background: #FFF;
     color:black;
-    border: 1px solid black;
-    box-shadow: inset 0 0 0 0 black;
-}
-
-.volunteer .volunteer-form .btn.btn-custom:hover {
-    color:white;
-    border: 1px solid black;
-    box-shadow: inset 0 0 0 30px black;
-}
-
-.map{
-    height:500px;
-    width: 600px;   
-    margin: 10px;
-}
-
-@media screen and (max-width:600px){
-    .bulb-container{
-        width: 80%;
+  }
+  
+  @media (max-width: 991px) {
+    section {
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
-
-    .map{
-        height: 250px;
-        width:250px;
+    
+    .row {
+      flex-direction: column;
     }
-}
+    
+    .contact-info {
+      margin-bottom: 40px;
+      width: 100%;
+    }
+    
+    .contact-form {
+      width: 100%;
+    }
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .contact-main {
+    
+    background-image: url(/images/volunteer/volunteer.jpg);
+    
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
 
-
+    position: relative;
+  }
+  
+ .contact-main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(79, 77, 77, 0.8);
+  }
     
