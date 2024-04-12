@@ -1,81 +1,90 @@
-.each-branch{
-    display: flex;
-    flex-direction: row;
-    height: 400px;
-    width: 500px;
-    border: #f0c14a 2px solid ;
-    margin:30px 400px;
-    
-    box-shadow:0px 20px 10px 2px rgb(138, 136, 136);
-    
+.volunteer {
+    position: relative;
+    width: 100%;
+    margin: 45px 0;
+    background: rgba(0, 0, 0, .5);
+    background-image: url(../images/volunteer/volunteer.jpg);
 }
- .each-branch:hover{
-     transform: scale(1.15);
- }
- .map{
-     padding:35px 35px;
- }
- .more-details{
-    
-     text-align: center;
-     color: #efa9b1; ;
- }
- .owner-detail{
-     margin-left: 50px;
- }
- .contact-visit{
- 
-     text-align: center;
-     color: #8d5353;
- }
- .branch{
-     text-align: center;
-     color: #f0c14a;
-     font-size: 60px;
- }
- .owner-img{
-     border-radius: 50%;
-     height: 100px;
-     margin: 10px;
-     margin-left:100px;
- }
- .tel-icon{
-     height: 30px;
-     margin:5px;
- }
- .wp-icon{
-     height: 30px;
-     margin:5px;
- }
- .email-icon{
-     height: 30px;
-     margin:5px;
- }
- .line {
-     border: solid;
-     color: #131212;
-     Position: relative;
-     Left: 0Px;
- }
- .owner-name{
-     margin:10px;
-     font-family: 'Times New Roman', Times, serif;
- }
- .text-decor{
-     text-decoration: none;
-     font-size: 35px;
-     color: #131212;
-     margin:5px
- }
 
- .each-branch1{
-    display: flex;
-    flex-direction: row;
-    height: 400px;
-    width: 500px;
-    border: #f0c14a 2px solid ;
-    margin:30px 400px;
-    display: inline-block;
-    box-shadow:0px 20px 10px 2px rgb(138, 136, 136);
-    
+.volunteer .volunteer-content {
+    padding: 30px 0 45px 0;
+}
+
+.container .volunteer {
+    margin: 90px 0;
+}
+
+.container .volunteer .volunteer-content {
+    padding: 45px 30px 15px 30px;
+}
+
+.volunteer .volunteer-content .section-header {
+    margin-bottom: 30px;
+}
+
+.volunteer .volunteer-content .section-header h2 {
+    color: #ffffff;
+}
+
+.volunteer .volunteer-text p {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.volunteer .volunteer-form {
+    padding: 90px 30px;
+    background: #FDBE33;
+}
+
+.volunteer .volunteer-form .control-group {
+    margin-bottom: 15px;
+}
+
+.volunteer .volunteer-form .form-control {
+    height: 60px;
+    color: #ffffff;
+    padding: 0 15px;
+    border-radius: 0;
+    border: 1px solid #ffffff;
+    background: transparent;
+}
+
+.volunteer .volunteer-form textarea.form-control {
+    height: 120px;
+    padding: 15px;
+}
+
+.volunteer .volunteer-form .form-control::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.volunteer .volunteer-form .form-control:-ms-input-placeholder,
+.volunteer .volunteer-form .form-control::-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.volunteer .volunteer-form .btn.btn-custom {
+    padding: 15px 0;
+    width: 100%;
+    height: 60px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    box-shadow: inset 0 0 0 0 #ffffff;
+}
+
+.volunteer .volunteer-form .btn.btn-custom:hover {
+    color: #FDBE33;
+    border: 1px solid #ffffff;
+    box-shadow: inset 0 0 0 30px #ffffff;
+}
+.section-header p{
+    font-size: xx-large;
+    font-weight: 500;
+    color: #ffffff;
+}
+.benefits{
+    color: #7f248d;
+    font-size: xx-large;
+    margin-left: 36%;
 }
