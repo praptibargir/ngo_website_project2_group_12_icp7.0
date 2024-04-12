@@ -50,7 +50,7 @@
                     </li>
                 </ul>
             </div>
-            <button type="button" class="btn btn-outline-success">Login/Register</button>
+            <a><button type="button" class="btn btn-outline-success">Login/Register</button></a>
             <div class="theme">
                 <img src="images/light.png" class="theme-img" id="light" onclick="lightmode()" />
                 <img src="images/dark.png" class="theme-img" id="dark" onclick="darkmode()" />
@@ -182,7 +182,7 @@
                 </div>
                 <div class="col-lg-3">
                     <img src="images/home/marketing.png" class="counter-img">
-                    <h2 class="text-center" style="color: white;"><span id="counter3">0</span>K+<br />Campaigns</h2>
+                    <h2 class="text-center" style="color: white;"><span id="counter3">0</span>+<br />Campaigns</h2>
                 </div>
                 <div class="col-lg-3">
                     <img src="images/home/raise.png" class="counter-img">
@@ -194,35 +194,25 @@
     </div>
 
     <script>
-        // Define target numbers for each counter
-        const targetNumbers = [100, 200, 300,400]; // Change this to your desired numbers
-
-        // Get counter elements
+        const targetNumbers = [20, 200, 50, 250];
         const counterElements = [
             document.getElementById('counter1'),
             document.getElementById('counter2'),
             document.getElementById('counter3'),
             document.getElementById('counter4')
         ];
-
-        // Function to update a specific counter
         function updateCounter(index) {
             let count = parseInt(counterElements[index].innerText);
             if (count < targetNumbers[index]) {
                 count++;
                 counterElements[index].innerText = count;
-                setTimeout(() => updateCounter(index), 10); // Change the delay (in milliseconds) if needed
+                setTimeout(() => updateCounter(index), 10);
             }
         }
-
-        // Start each counter
         for (let i = 0; i < targetNumbers.length; i++) {
             updateCounter(i);
         }
     </script>
-
-
-
     <!--end of counter section-->
 
     <!--work section-->
@@ -261,6 +251,33 @@
         </div>
     </div>
     <!--end of work section-->
+
+    <!--testimonial-->
+    <h2 class="text-center fs-1 colour-purple">Testimonials</h2>
+    <h3 class="fs-3 text-center colour-blue mb-3">Read our success stories</h3>
+    <div class="user-card">
+        <img src="images/about/aditi.jpg" class="user-profile" id="test-image" />
+        <p class="user-name" id="test-name">Joana B </p>
+        <p class="user-name-email" id="test-mail">@joanaB01@gmail.com</p>
+        <p class="review-text" id="test-text">
+            Worked as a volunteer here. Enjoyed the experience and their work techniques. Friendly staff and fully
+            dedicated to service.
+            <br> <br>
+        <p class="small-txt" id="test-date">Oct 8, 2022</p>
+        <div class="rating-star">
+            <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+            <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+            <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+            <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+            <i class="fa-solid fa-star" style="color: #f2be02;"></i>
+        </div>
+    </div>
+    <div class="number">
+        <img src="images/home/left.png" class="quantity m-1" onclick="dec()"/>
+        <p id="num" class="quant m-1"> 1 </p>
+        <img src="images/home/right.png" class="quantity m-1" onclick="inc()"/>
+    </div>
+    <!--end of testimonial-->
 
 
     <!--footer-->

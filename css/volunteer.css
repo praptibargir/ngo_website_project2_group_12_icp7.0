@@ -77,6 +77,9 @@
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(127, 36, 141, 0.3); /* lighter shade of #7f248d */
 }
+.card h2 {
+    color:#1082ce;
+}
 
 .card h2 {
     color: #1082ce;

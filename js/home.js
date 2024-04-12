@@ -32,7 +32,7 @@ function health() {
   const text = document.getElementById("gallery-text");
   image.src = "../images/home/h4.jpg";
   subheading.innerText = "Health";
-  text.innerText = "Health and hygiene are fundamental aspects of well-being and quality of life. NGOs play a significant role in promoting health and hygiene practices, particularly in communities facing challenges such as poverty, inadequate healthcare infrastructure, and lack of education. ";
+  text.innerText = "Health is a fundamental aspects of well-being and quality of life.We play a significant role in promoting health and hygiene practices, particularly in communities facing challenges such as poverty, inadequate healthcare infrastructure, and lack of education. ";
 }
 
 function awareness() {
@@ -41,7 +41,7 @@ function awareness() {
   const text = document.getElementById("gallery-text");
   image.src = "../images/home/h3.jpg";
   subheading.innerText = "Awareness";
-  text.innerText = "Awareness of general hygine, women empowerment and other important health issues are very important.  ";
+  text.innerText = "An awareness campaign conducted by an NGO can be a powerful tool to educate communities about important issues such as hygiene, sanitation, public health, and environmental sustainability. ";
 }
 
 function care() {
@@ -50,7 +50,43 @@ function care() {
   const text = document.getElementById("gallery-text");
   image.src = "../images/home/h1.jpeg";
   subheading.innerText = "Hygiene";
-  text.innerText = "Hygine is very necessary. Specially for women, menstrunal hygine is very important for a healthy living. ";
+  text.innerText = "We promote hygiene practices and improving sanitation, particularly in regions where access to clean water and sanitation facilities is limited. ";
+}
+
+function inc(){
+  const num=document.getElementById("num");
+  let number=parseInt(num.innerText);
+  if (number<5){
+    num.innerText=++number;
+  }else{
+    alert("Only 5 cards are available");
+  }
+  choice(num);
+}
+
+function dec(){
+  const num=document.getElementById("num");
+  let number=parseInt(num.innerText);
+  if (number<=1){
+    alert("Cards can't be negative");
+  }else{
+    num.innerText=--number;    
+  }
+  choice(num);
+}
+
+function choice(choice){
+  const image=document.getElementById("test-image");
+  const name=document.getElementById("test-name");
+  const mail=document.getElementById("test-mail");
+  const text=document.getElementById("test-text");
+  const date=document.getElementById("test-date");
+  switch(choice){
+    case 1:
+      image.src="../image/about/Bhakti.jpg";
+      name.innerText="Bhakti Gondhal";
+      break;
+  }
 }
 
 

@@ -1,3 +1,25 @@
+.theme {
+    margin-left: 10px;
+}
+
+.theme-img {
+    height: 30px;
+    background-color: white;
+    padding: 0.5px;
+    border-radius: 50%;
+}
+.theme-light{
+    background-color: white;
+}
+
+.theme-dark{
+    background-color: black;
+    color: white;
+}
+
+
+
+
 /*******************************/
 /*********** Team CSS **********/
 /*******************************/
