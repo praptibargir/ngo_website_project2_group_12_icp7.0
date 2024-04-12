@@ -66,7 +66,7 @@ function dec(){
   const num=document.getElementById("num2");
   let number=parseInt(num.innerText);
   if (number<=1000){
-    num.innerText=--number;  
+    num.innerText=++number;  
     alert("We apologise for your inconvenience");  
   }
 }
