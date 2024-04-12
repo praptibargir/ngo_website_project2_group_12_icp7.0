@@ -13,14 +13,12 @@
 
 .theme-light{
     background-color: white;
-    color:black;
-    
 }
 
 
 .theme-dark{
     background-color: black;
-    color: white;
+    
 }
 .problem{
     height: 100px;
@@ -42,7 +40,7 @@ padding: 5px;
     box-shadow: #fbc108 0 0 3px 3px;
 }
 .accordion-item{
-    width: 730px;
+    width: 725px;
     margin-top: 55px;
     margin-left: -30px;
     border-radius: 15px;
