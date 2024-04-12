@@ -22,5 +22,9 @@ Here's how the home page looks like:
 ![Home page](images/readme/Screenshot%20(218).png)
 ![Home page](images/readme/Screenshot%20(219).png)
 ![Home page](images/readme/Screenshot%20(220).png)
+![Home page](images/readme/Screenshot%20(221).png)
+![Home page](images/readme/Screenshot%20(222).png)
+![Home page](images/readme/Screenshot%20(223).png)
+![Home page](images/readme/Screenshot%20(224).png)
 
 
