@@ -192,6 +192,16 @@ a{
     flex-direction: row;
     justify-content: center;
 }
+
+.schedule{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.scheme-text{
+    font-weight: bold;
+}
 @media screen and (max-width:1100px) and (min-width:700px) {
     .cards {
         display: flex;
