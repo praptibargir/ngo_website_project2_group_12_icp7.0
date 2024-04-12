@@ -1,0 +1,25 @@
+<input type="text" id="applicant-name" name="applicant-name" class="input-name" placeholder="Enter Name of Applicant Organization" required>
+
+        <input type="number" id="PAN-no" name="PAN-no" class="input-name" placeholder="Enter PAN Number of Applicant Organization" required>
+
+        <select name="select" id="select" class="input-name">
+            <option value="select" >Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Male">Female</option>
+            <option value="Male">Other</option>
+        </select>
+
+        <input type="email" id="email" name="email" class="input-name" placeholder="Enter Your Email ID" required>
+
+        <input type="password" id="password" name="password" class="input-name" placeholder="Enter Your Password" required>
+         
+        <input type="number" id="mobile-no" name="mobile-no" class="input-name" placeholder="Enter Your Mobile NO." required>
+
+        <input type="text" id="field" name="field" class="input-name field" placeholder="Please fill all Marked Mandatory Fields"> 
+
+        <button type="button" class="btn btn-outline-success btn-registration" onclick="validate()">
+            Submit
+        </button>
+        <button type="button" class="btn btn-outline-success btn-registration" onclick="reset()">
+            Reset
+        </button>
