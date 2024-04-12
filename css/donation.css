@@ -816,3 +816,7 @@ a{
     padding: 60px;
 }
 
+.active-1 {
+    color: #ffb175 !important;
+    transform: scale(1.2) !important;
+}
