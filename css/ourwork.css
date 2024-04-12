@@ -1,0 +1,48 @@
+.butn{
+    padding: 10px 20px;
+    border: none;
+    background-color: #f1471d;
+    color: white;
+    margin: 10px;
+    width: 15%;
+}
+
+.butn:hover{
+    font-size: 20px;
+    border: solid 1px black;
+    color: #f1471d;
+}
+
+.work-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subwork{
+    display: flex;
+    flex-direction: column;
+}
+
+.image{
+    margin: 10px;
+}
+
+@media screen and (max-width: 1100px){
+    .work-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .subwork{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .butn{
+        width: 70%;
+    }
+}
