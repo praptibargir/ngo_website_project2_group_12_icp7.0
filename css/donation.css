@@ -557,3 +557,257 @@ a{
         /* One card per row */
     }
 }
+
+
+.container-star {
+    width: 650px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 40px auto;
+    padding: 50px 30px;
+    border-radius: 30px;
+    letter-spacing: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    /* background-color: rgb(2, 2, 58); */
+    /* background-color: #7f248d; */
+    background-color: #f7f6f6;
+    color: black;
+}
+
+.container-star h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    /* color: rgb(255, 255, 255); */
+    text-shadow: 1px 1px 0.2px black;
+    text-align: center;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.stars i {
+    color: #d3d1d1;
+    font-size: 25px;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    text-shadow: 1px 1px 0.2px black;
+    cursor: pointer;
+}
+
+.send-review-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.send-review-button button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-review-button button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.message {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    /* color: #fff; */
+    font-size: 20px;
+    text-shadow: 1px 1px 0.2px black;
+}
+
+@media screen and (max-width: 400px) {
+    .container-star{
+        width: 80%;
+        letter-spacing: 2px;
+    }
+}
+
+.gallery-img {
+    height: 370px;
+    display: block;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.gallery-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 30px;
+}
+
+.gallery-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.selector {
+    border: solid 1x black;
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 5px;
+    margin: 2px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:1100px) and (min-width:700px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0 0 10px 5px #a3a3a3;
+        border: none;
+        text-align: center;
+    }
+
+    .card {
+        margin: 10px;
+        width: 60%;
+    }
+
+    .gallery-card {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:700px) and (min-width:460px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0 0 10px 5px #a3a3a3;
+        border: none;
+        text-align: center;
+    }
+
+    .card {
+        margin: 10px;
+        width: 80%;
+    }
+
+    .gallery-card {
+        flex-direction: column;
+    }
+
+    .gallery-img {
+        height: 550px;
+    }
+}
+
+@media screen and (max-width:460px) and (min-width:340px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .card {
+        margin: 10px;
+        width: 98%;
+    }
+
+    .card-text {
+        font-size: 10px;
+    }
+
+    .button {
+        font-size: 10px;
+    }
+
+    .gallery-card {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .gallery-img {
+        height: 450px;
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width:340px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .card {
+        margin: 10px;
+        width: 98%;
+    }
+
+    .card-text {
+        font-size: 10px;
+    }
+
+    .button {
+        font-size: 10px;
+    }
+
+    .gallery-card {
+        flex-direction: column;
+        width: 99%;
+    }
+
+    .gallery-img {
+        height: 100px;
+    }
+
+    .counter-img {
+        height: 50px;
+    }
+
+    .intro-text {
+        font-size: 12px;
+    }
+
+    .work-img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.gallery-card {
+    display: flex;
+}
+
+.parent-head h2 {
+    text-align: center;
+    color: #7b0323;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.gallery-card {
+    background-color: #ededed;
+    padding: 60px;
+}
+
