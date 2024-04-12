@@ -53,5 +53,41 @@ function care() {
   text.innerText = "We promote hygiene practices and improving sanitation, particularly in regions where access to clean water and sanitation facilities is limited. ";
 }
 
+function inc(){
+  const num=document.getElementById("num");
+  let number=parseInt(num.innerText);
+  if (number<5){
+    num.innerText=++number;
+  }else{
+    alert("Only 5 cards are available");
+  }
+  choice(num);
+}
+
+function dec(){
+  const num=document.getElementById("num");
+  let number=parseInt(num.innerText);
+  if (number<=1){
+    alert("Cards can't be negative");
+  }else{
+    num.innerText=--number;    
+  }
+  choice(num);
+}
+
+function choice(choice){
+  const image=document.getElementById("test-image");
+  const name=document.getElementById("test-name");
+  const mail=document.getElementById("test-mail");
+  const text=document.getElementById("test-text");
+  const date=document.getElementById("test-date");
+  switch(choice){
+    case 1:
+      image.src="../image/about/Bhakti.jpg";
+      name.innerText="Bhakti Gondhal";
+      break;
+  }
+}
+
 
 

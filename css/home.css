@@ -173,6 +173,21 @@ a{
     font-weight: bold;
 }
 
+.quantity{
+    height: 20px;
+}
+
+.quant{
+    font-size: 20px;
+}
+
+.number{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width:1100px) and (min-width:700px) {
     .cards {
         display: flex;
