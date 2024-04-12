@@ -63,7 +63,6 @@
    
 }
 .card {
-    border: 2px solid #fbc108;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(127, 36, 141, 0.3); /* lighter shade of #7f248d */
     overflow: hidden;
@@ -189,7 +188,6 @@
     padding: 90px 30px;
     background: #ffffff;
     margin-bottom: 0%;
-    border: #fbc108 3px solid;
 }
 
 .volunteer .volunteer-form .control-group {

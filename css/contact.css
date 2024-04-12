@@ -10,8 +10,9 @@
     padding: 30px 0 45px 0;
 }
 
-.container .volunteer {
-    margin: 90px 0;
+.container .volunteer{
+    display: block;
+    margin: 0 auto;
 }
 
 .container .volunteer .volunteer-content {
@@ -23,17 +24,17 @@
 }
 
 .volunteer .volunteer-content .section-header h2 {
-    color: #ffffff;
+    color: black;
 }
 
 .volunteer .volunteer-text p {
-    color: #ffffff;
+    color:black;
     font-size: 18px;
 }
 
 .volunteer .volunteer-form {
     padding: 90px 30px;
-    background:#b1b1cd;
+    background:white;
 }
 
 .volunteer .volunteer-form .control-group {
@@ -42,10 +43,10 @@
 
 .volunteer .volunteer-form .form-control {
     height: 60px;
-    color: #ffffff;
+    color:black;
     padding: 0 15px;
     border-radius: 0;
-    border: 1px solid #ffffff;
+    border: 1px solid black;
     background: transparent;
 }
 
@@ -55,44 +56,46 @@
 }
 
 .volunteer .volunteer-form .form-control::placeholder {
-    color: #ffffff;
+    color:black;
     opacity: 1;
 }
 
 .volunteer .volunteer-form .form-control:-ms-input-placeholder,
 .volunteer .volunteer-form .form-control::-ms-input-placeholder {
-    color: #ffffff;
+    color:black;
 }
 
 .volunteer .volunteer-form .btn.btn-custom {
     padding: 15px 0;
     width: 100%;
     height: 60px;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    box-shadow: inset 0 0 0 0 #ffffff;
+    color:black;
+    border: 1px solid black;
+    box-shadow: inset 0 0 0 0 black;
 }
 
 .volunteer .volunteer-form .btn.btn-custom:hover {
-    color: #FDBE33;
-    border: 1px solid #ffffff;
-    box-shadow: inset 0 0 0 30px #ffffff;
+    color:white;
+    border: 1px solid black;
+    box-shadow: inset 0 0 0 30px black;
 }
-.section-header p{
-    font-size: xx-large;
-    font-weight: 500;
-    color: #ffffff;
+
+.map{
+    height:500px;
+    width: 600px;   
+    margin: 10px;
 }
-.benefits{
-    color: #7f248d;
-    font-size: xx-large;
-    margin-left: 36%;
-}
- 
 
 @media screen and (max-width:600px){
     .bulb-container{
         width: 80%;
     }
+
+    .map{
+        height: 250px;
+        width:250px;
+    }
 }
+
+
     
