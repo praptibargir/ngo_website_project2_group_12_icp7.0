@@ -1,11 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Unity Uplift</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/ourwork.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <script src="../js/ourwork.js"></script>
 </head>
+
 <body>
-    
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg bg-body-light shadow">
+        <div class="container-fluid">
+            <img class="nav-logo" src="../icon/logo-rectangle.PNG" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 nav-underline ">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/ourwork.html">Our Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/donation.html">Donation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/volunteer.html">Volunteer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-outline-success">Login/Register</button>
+        </div>
+    </nav>
+    <!--End of header-->
+
+    <!-- Page Header Start -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Our Work</h2>
+                </div>
+                <div class="col-12">
+                    <a href="../index.html">Home</a>
+                    <a href="ourwork.html">Our Work</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!--work section-->
+    <h2 class="text-center fs-1 colour-purple">Our Work</h2>
+    <h3 class="fs-3 text-center colour-blue mb-3">Major areas of Focus</h3>
+    <div class="cards ">
+        <div class="card text-bg-dark">
+            <img src="../images/home/bgcard1.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <img src="../images/home/education.png" class="work-img">
+                <h3 class="card-title">Education For All</h3>
+                <p class="card-text">Empowering futures through quality education. Our initiatives aim to provide
+                    accessible and transformative learning experiences for children.
+                </p>
+            </div>
+        </div>
+        <div class="card text-bg-dark">
+            <img src="../images/home/bgcard2.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <img src="../images/home/healthcare.png" class="work-img" />
+                <h3 class="card-title">Health And Hygiene</h3>
+                <p class="card-text">Building healthy communities. From healthcare access to hygiene initiatives, we
+                    strive to enhance the overall well-being of individuals and families.
+                </p>
+            </div>
+        </div>
+        <div class="card text-bg-dark">
+            <img src="../images/home/bgcard3.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <img src="../images/home/women.png" class="work-img" />
+                <h3 class="card-title">Women Empowerment</h3>
+                <p class="card-text">Empowering women, transforming societies. Join us in promoting women's rights,
+                    skill development, and entrepreneurship for lasting change.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--end of work section-->
+
+    <!--all work section-->
+    <h2 class="text-center fs-1 colour-purple">Services</h2>
+    <h3 class="fs-3 text-center colour-blue mb-3">Here are all the services that we provide</h3>
+    <div class="work-buttons">
+        <button class="btn butn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+            aria-controls="offcanvasBottom">Education for all</button>
+
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+            aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-center" id="offcanvasBottomLabel">Education For all</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body small text-center">
+                Unity Uplift is instrumental in promoting education for all by addressing barriers to education,
+                improving
+                access to quality education, and advocating for inclusive and equitable education systems. Here's how
+                we contribute to the goal of education for all:
+                <a href="#edu-for-all"><button type="button" class="btn btn-outline-success d-block mx-auto mb-5px"
+                        onclick="education()">Read
+                        More</button></a>
+            </div>
+
+        </div>
+
+        <button class="btn butn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+            aria-controls="offcanvasTop">Women Empowerment</button>
+
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTopLabel">Women empowerment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                Unity Uplift play a crucial role in empowering women and promoting gender equality by addressing the
+                various
+                barriers and challenges that women face in society. Here are some ways in which we contribute to
+                women's empowerment:
+                <a href="#women-empowerment"><button type="button"
+                        class="btn btn-outline-success d-block mx-auto mb-5px" onclick="women()">Read
+                        More</button></a>
+            </div>
+
+        </div>
+
+        <button class="btn butn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">Health And Hygine</button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Health And Hygine</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                Unity Uplift are actively involved in promoting health and hygiene practices, particularly in
+                communities where
+                access to healthcare services and sanitation facilities is limited. Here are some ways in which we
+                contribute to health and hygiene:
+                <a href="#health-hygine"><button type="button" class="btn btn-outline-success d-block mx-auto mb-5px"
+                        onclick="health()">Read
+                        More</button></a>
+            </div>
+
+        </div>
+
+        <button class="btn butn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+            aria-controls="staticBackdrop">
+            Awareness
+        </button>
+
+        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+            aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="staticBackdropLabel">Awareness</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body text-center">
+                <div>
+                    Awareness campaigns by Unity Uplift are vital for educating communities and raising awareness about
+                    various
+                    social, environmental, and health issues. Here's how we conduct awareness campaigns:
+                    <a href="#awareness"><button type="button" class="btn btn-outline-success d-block mx-auto mb-5px"
+                            onclick="awareness()">Read
+                            More</button></a>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--end of all work section-->
+
+
+    <!--desc-->
+    <h1 class="text-center fs-1 colour-red" id="heading">Education For All </h1>
+    <h2 class="fs-3 text-center colour-blue mb-3" id="subheading">Providing Education rights to all</h2>
+    <div id="desc" class="text-center m-3 subwork">
+
+        <div class="images">
+            <img src="../images/ourwork/img3.jpg" height="200px" class="image" id="img1" />
+            <img src="../images/ourwork/img2.jpg" height="200px" class="image" id="img2" />
+            <img src="../images/ourwork/h4.jpg" height="200px" class="image" id="img3" />
+        </div>
+        <div>
+            <p id="text">
+                Unity Uplift's champion education for all by expanding access, enhancing quality, advocating for inclusivity, and
+                mobilizing communities. We offer scholarships, construct schools, and facilitate teacher training to
+                bridge gaps in education. Addressing socio-economic barriers like poverty and discrimination, we
+                ensure marginalized groups, including girls and children with disabilities, can access schooling.
+                Advocating for policy reforms and inclusive practices, they promote equitable education systems that
+                accommodate diverse needs. Engaging communities through awareness campaigns and parent involvement, we
+                foster supportive environments for learning. Monitoring and evaluating programs, they ensure
+                accountability and effectiveness in achieving educational goals. Collaborating with governments, other
+                NGOs, and stakeholders, we amplify their impact and promote collective action. Through these efforts,
+                Unity Uplift play a vital role in advancing the vision of education for all, empowering individuals, and
+                fostering socio-economic development.
+            </p>
+        </div>
+    </div>
+
+    <!--desc ends-->
+
+    <!--footer-->
+    <div class="bg-dark bg-gradient text-light p-4">
+        <div class="row">
+            <div class="col-lg-3 my-auto">
+                <img class="d-block" src="../icon/logo-rectangle.PNG" />
+                <p class="pt-3">Get in Touch with us:</p>
+                <div>
+                    <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fs-2 p-2 pt-0"
+                            style="color: #ffffff;"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fs-2 p-2 pt-0"
+                            style="color: #ffffff;"></i></a>
+                    <a href="https://www.instagram.com/roadtocode4u/"><i class="fa-brands fa-instagram fs-2 p-2 pt-0"
+                            style="color: #ffffff;"></i></a>
+                    <a href="https://twitter.com/roadtocode4u"><i class="fa-brands fa-x-twitter fs-2 p-2 pt-0"
+                            style="color: #ffffff;"></i></a>
+                    <a href="mailto:suraj@roadtocode.org"><i class="fa-regular fa-envelope fs-2 p-2 pt-0"
+                            style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 my-auto">
+                <p> Unity Uplift foundation is a non government organization,
+                    registered under the company Act 2013. It
+                    is set up to tackle the different types of problems, especially regarding children, disabled and
+                    women. We work for children's education, health, human rights...</p>
+            </div>
+            <div class="col-lg-2">
+                <p class="fs-4"><u>Important links:</u></p>
+                <ul>
+                    <li><a href="../index.html" class="text-decoration-none text-light">Home</a></li>
+                    <li><a href="../pages/aboutus.html" class="text-decoration-none text-light">About</a></li>
+                    <li><a href="../pages/ourwork.html" class="text-decoration-none text-light">Our Work</a></li>
+                    <li><a href="../pages/donation.html" class="text-decoration-none text-light">Donation</a></li>
+                    <li><a href="../pages/volunteer.html" class="text-decoration-none text-light">Volunteer</a></li>
+                    <li><a href="../pages/contact.html" class="text-decoration-none text-light">Contact</a></li>
+                    <li><a href="../pages/faq.html" class="text-decoration-none text-light">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 d-flex flex-column">
+                <a><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                    404, Laxmi Heights, Above Lotus Multi-Speciality Hospital Manjari BK, Pune- 412307</a>
+                <br />
+                <a href="tel:8805803087" class="text-decoration-none text-light"><i class="fa-solid fa-phone"
+                        style="color: #ffffff;"></i> +91 88058 03087</a>
+                <br />
+                <a href="tel:7821011976" class="text-decoration-none text-light"><i class="fa-solid fa-phone"
+                        style="color: #ffffff;"></i> +91 78210 11976</a><br />
+                <a href="mailto:suraj@roadtocode.org" class="text-decoration-none text-light"><i
+                        class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                    suraj@roadtocode.org</a>
+            </div>
+        </div>
+        <hr />
+
+
+        <p class="text-center">Copyright © 2024 <a href="../index.html" class="link-warning text-decoration-none">Unity
+                Uplift</a></p>
+    </div>
+    <!--end of footer-->
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/14a1a7dd00.js" crossorigin="anonymous"></script>
+
 </html>
