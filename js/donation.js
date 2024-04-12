@@ -213,32 +213,31 @@ const stars = document.querySelectorAll(".stars i");
 
         // donation
         function donate(projectId) {
-            var donationAmount = prompt("How much do you want to donate?");
+            let donationAmount = prompt("How much do you want to donate?");
             if (donationAmount != null && donationAmount != "") {
-                // Convert donation amount to a number
-                var donation = parseFloat(donationAmount);
+              
+                let donation = parseFloat(donationAmount);
         
-                // Update total donation
-                var totalDonationElement = document.querySelector('.progress-card:nth-child(' + projectId + ') .colour-red');
-                var currentTotal = parseFloat(totalDonationElement.textContent.replace('Total Donation:', '').trim());
-                var newTotal = currentTotal + donation;
+                let totalDonationElement = document.querySelector('.progress-card:nth-child(' + projectId + ') .colour-red');
+                let currentTotal = parseFloat(totalDonationElement.textContent.replace('Total Donation:', '').trim());
+                let newTotal = currentTotal + donation;
                 totalDonationElement.textContent = 'Total Donation:' + newTotal;
         
-                // Update progress bar
-                var progressBar = document.querySelector('.progress-card:nth-child(' + projectId + ') .progress-bar-fill');
-                var currentWidth = parseFloat(progressBar.style.width);
-                var currentFunded = parseFloat(document.querySelector('.progress-card:nth-child(' + projectId + ') .funded-text').textContent.replace('% Funded', ''));
+               
+                let progressBar = document.querySelector('.progress-card:nth-child(' + projectId + ') .progress-bar-fill');
+                let currentWidth = parseFloat(progressBar.style.width);
+                let currentFunded = parseFloat(document.querySelector('.progress-card:nth-child(' + projectId + ') .funded-text').textContent.replace('% Funded', ''));
                 
-                // Calculate new width and funded percentage
-                var newWidth = ((currentWidth / currentFunded) * (currentFunded + (donation / newTotal) * 100)).toFixed(2);
-                var newFunded = ((currentFunded + (donation / newTotal) * 100)).toFixed(0);
+                
+                let newWidth = ((currentWidth / currentFunded) * (currentFunded + (donation / newTotal) * 100)).toFixed(2);
+                let newFunded = ((currentFunded + (donation / newTotal) * 100)).toFixed(0);
         
-                // Limit progress to 100%
+                
                 if (newFunded > 100) {
                     newFunded = 100;
                 }
         
-                // Update progress bar and funded text
+                
                 progressBar.style.width = newWidth + '%';
                 document.querySelector('.progress-card:nth-child(' + projectId + ') .funded-text').textContent = newFunded + '% Funded';
             }
