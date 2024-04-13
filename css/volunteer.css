@@ -36,6 +36,7 @@
 .volu{
     height: 400px;
     width: 600px;
+    margin: 30px;
 }
 
 
@@ -253,5 +254,6 @@
     .volu{
         width: 300px;
         height: 200px;
+        margin: 2px;
     }
 } 
