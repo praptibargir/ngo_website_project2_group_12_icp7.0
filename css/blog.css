@@ -65,6 +65,7 @@ body {
     padding-bottom: 15px;
     transition: box-shadow 0.5s;
 }
+
 .temple-card:hover{
     box-shadow: 0px 0px 10px 4px #031a44;
 }
@@ -87,6 +88,7 @@ body {
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 
 
 @media screen and (max-width: 600px) {
@@ -130,12 +132,14 @@ body {
         font-size: 13px;
     }
 }
+
 .applycss{
     width:60%;
     height: 30%;
     margin: 10px auto;
-    
+   
 }
+
 .carousel-caption{
     font-size: 25px;
     font-weight: 800;
