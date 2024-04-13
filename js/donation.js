@@ -123,7 +123,7 @@ const stars = document.querySelectorAll(".stars i");
             // Add more image URLs as needed
         ];
 
-        const subheadings = ["event1", "event2", "event3", "event4", "event5"];
+        const subheadings = ["Education For All ", "Education For Girls", "Hygiene", "Health Awareness", "Women Empowerment"];
         const texts = [
             "'Education for All' is a noble cause. Access to Education, Equitable Education, Quality Education, Early Childhood Education, etc.",
             "Women empowerment is a multifaceted concept that encompasses various aspects of enhancing the social, economic, political, and psychological status of women, enabling them to participate fully and equally in society.",
@@ -158,7 +158,7 @@ const stars = document.querySelectorAll(".stars i");
             const subheading = document.getElementById("gallery-subheading");
             const text = document.getElementById("gallery-text");
             image.src = "https://media.istockphoto.com/id/839295596/photo/six-pre-teen-friends-piggybacking-in-a-park-close-up-portrait.jpg?s=612x612&w=0&k=20&c=MWkFYzpRSvO1dRql3trV4k6ECO-rTy4HgF8OxrtUkH8=";
-            subheading.innerText = "event 1";
+            subheading.innerText = "Education For All";
             text.innerText = "'Education for All' is a noble cause. Access to Education, Equitable Education, Quality Education, Early Childhood Education, etc.",
                 "Women empowerment is a multifaceted concept that encompasses various aspects of enhancing the social, economic, political, and psychological status of women, enabling them to participate fully and equally in society.",
                 "Health and hygiene are fundamental aspects of well-being and quality of life. NGOs play a significant role in promoting health and hygiene practices, particularly in communities facing challenges such as poverty, inadequate healthcare infrastructure, and lack of education.",
@@ -171,7 +171,7 @@ const stars = document.querySelectorAll(".stars i");
             const subheading = document.getElementById("gallery-subheading");
             const text = document.getElementById("gallery-text");
             image.src = "https://t4.ftcdn.net/jpg/04/11/19/61/360_F_411196155_bAztsXMFRSprbiFP8mWtDIG6WNVJCg6d.jpg";
-            subheading.innerText = "event 2";
+            subheading.innerText = "Education For Girls";
             text.innerText = "Education for All' is a noble cause. Access to Education, Equitable Education, Quality Education, Early Childhood Education, etc.",
                 "Women empowerment is a multifaceted concept that encompasses various aspects of enhancing the social, economic, political, and psychological status of women, enabling them to participate fully and equally in society.",
                 "Health and hygiene are fundamental aspects of well-being and quality of life. NGOs play a significant role in promoting health and hygiene practices, particularly in communities facing challenges such as poverty, inadequate healthcare infrastructure, and lack of education.",
@@ -184,8 +184,8 @@ const stars = document.querySelectorAll(".stars i");
             const subheading = document.getElementById("gallery-subheading");
             const text = document.getElementById("gallery-text");
             image.src = "https://media.istockphoto.com/id/839295596/photo/six-pre-teen-friends-piggybacking-in-a-park-close-up-portrait.jpg?s=612x612&w=0&k=20&c=MWkFYzpRSvO1dRql3trV4k6ECO-rTy4HgF8OxrtUkH8=";
-            subheading.innerText = "event 3";
-            text.innerText = "HEducation for All' is a noble cause. Access to Education, Equitable Education, Quality Education, Early Childhood Education, etc.",
+            subheading.innerText = "Women Empowerment";
+            text.innerText = "Education for All' is a noble cause. Access to Education, Equitable Education, Quality Education, Early Childhood Education, etc.",
                 "Women empowerment is a multifaceted concept that encompasses various aspects of enhancing the social, economic, political, and psychological status of women, enabling them to participate fully and equally in society.",
                 "Health and hygiene are fundamental aspects of well-being and quality of life. NGOs play a significant role in promoting health and hygiene practices, particularly in communities facing challenges such as poverty, inadequate healthcare infrastructure, and lack of education.",
                 "Awareness of general hygine, women empowerment and other important health issues are very important.",
