@@ -90,15 +90,18 @@
         <p class="=welcome-text text-center fs-5 m-3">
             Discover our mission to uplift communities.
             Together, we can create positive change.
-            Explore our programs and get involved today.<br/>
+            Explore our programs and get involved today.<br />
             Thank you for joining us on this journey!</p>
     </div>
-    
+
 
     <script>
         const Username = prompt('Please Enter Your Name');
-        const name=document.getElementById("name");
-        name.innerText=`Dear ${Username},`;
+        const name = document.getElementById("name");
+        if (Username === null) {
+            Username = "user";
+        }
+        name.innerText = `Dear ${Username},`;
     </script>
 
     <!--Content-->
