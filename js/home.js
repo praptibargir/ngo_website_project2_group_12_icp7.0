@@ -54,25 +54,41 @@ function care() {
 }
 
 function inc(){
-  const num=document.getElementById("num");
+  const num=document.getElementById("num1");
   let number=parseInt(num.innerText);
-  if (number<5){
+  if (number<1000){
     num.innerText=++number;
-  }else{
-    alert("Only 5 cards are available");
+    alert("Thankyou For Liking");
   } 
 }
 
 function dec(){
-  const num=document.getElementById("num");
+  const num=document.getElementById("num2");
   let number=parseInt(num.innerText);
-  if (number<=1){
-    alert("Cards can't be negative");
-  }else{
-    num.innerText=--number;    
+  if (number<=1000){
+    num.innerText=++number;  
+    alert("We apologise for your inconvenience");  
   }
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  var verifyButton = document.getElementById('verifyButton');
+  var resultElement = document.getElementById('result');
 
+  verifyButton.addEventListener('click', function () {
+      var num1 = Math.floor(Math.random() * 10);
+      var num2 = Math.floor(Math.random() * 10);
+      var sum = num1 + num2;
 
+      var userInput = prompt('Please solve the following: ' + num1 + ' + ' + num2);
+      if (userInput !== null) {
+          var userAnswer = parseInt(userInput);
+          if (!isNaN(userAnswer) && userAnswer === sum) {
+              resultElement.textContent = 'Verification successful. You are not a robot!';
+          } else {
+              resultElement.textContent = 'Verification failed. Please try again.';
+          }
+      }
+  });
+});
 

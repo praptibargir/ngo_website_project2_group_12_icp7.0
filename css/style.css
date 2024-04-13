@@ -7,7 +7,10 @@ body{
     height:60px;
     margin: 2px 1px;
 }
-
+.nav-link{
+    color:#f1471d;
+    font-weight: bold;
+}
 .colour-red{
     color:#e91348;
 }

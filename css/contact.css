@@ -52,7 +52,17 @@ section {
     text-align: center;
     border-radius: 50%;
   }
-  
+  .contact-info-icon-home{
+    height: 70px;
+    width: 95px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+  }
+  .contact-info-icon-home i{
+    font-size: 30px;
+    line-height: 70px;
+  }
   .contact-info-icon i {
     font-size: 30px;
     line-height: 70px;
@@ -63,7 +73,7 @@ section {
   }
   
   .contact-info-content h4 {
-    color: #1da9c0;
+    color: #23b41e;
     font-size: 1.4em;
     margin-bottom: 5px;
   }
@@ -87,7 +97,9 @@ section {
     margin-bottom: 10px;
     color: #333;
   }
-  
+  .form-control{
+    border: none;
+  }
   .contact-form .input-box {
     position: relative;
     width: 100%;
@@ -127,13 +139,13 @@ section {
   .contact-form .input-box input[type="submit"]
   {
     width: 100%;
-    background:#40b93c;
+    background:#1b6d18;
     color: #FFF;
     border: none;
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
-    border: 1px solid #40b93c;
+    border: 1px solid #1b6d18;
     transition: 0.5s;
   }
   
