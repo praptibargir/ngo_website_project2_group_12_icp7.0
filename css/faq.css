@@ -25,48 +25,38 @@
     width: 100px;
 }
 .imgdonor{
-    height: 500px;
-    width: 450px;
-    margin-top: 70px;
-margin-bottom: 20px;
-border-radius: 30px;
-margin-left: 40px;
-border: #fbc108 solid 3px;
-opacity: 80%;
-padding: 5px;
+    width: 80%;
+    margin: 10px;
+    border-radius: 30px;
+    border: #fbc108 solid 3px;
+    opacity: 80%;
+    padding: 5px;
 
 }
 .imgdonor:hover{
     box-shadow: #fbc108 0 0 3px 3px;
 }
 .accordion-item{
-    width: 725px;
-    margin-top: 55px;
-    margin-left: -30px;
     border-radius: 15px;
-    margin-bottom: 20px;
-    
+    margin: 10px;
     border: 3px solid #fbc108;
 }
 .accordion-button{
-    width: 720px;
     background-color:white;
-border-radius: 15px;
     color:black;
     font-size: large;
-    --bs-accordion-active-bg: white;
 }
+    
 .accordion-body{
     box-shadow: black 25px;
     background-color: rgba(211, 211, 211, 0.548);
-    border-radius: 15px;
 }
 .search-bar{
     width: 90%;
     height: 57px;
     margin: 20px 20px;
     color: black;
-            text-align: center;
+    text-align: center;
             
 }
 
@@ -77,8 +67,10 @@ border-radius: 15px;
 }
 .inputs:hover {
     background-color: rgba(211, 211, 211, 0.548);
+}
 
-
+.accordion-button:not(.collapsed) {
+    background-color: white;
 }
 .searchbtn{
     margin-left: -20px;
@@ -89,3 +81,23 @@ border-radius: 15px;
    background-color:  #fbc108;
 }
 
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and(max-width: 1200px){
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
