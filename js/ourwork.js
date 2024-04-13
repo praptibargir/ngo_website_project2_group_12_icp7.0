@@ -62,3 +62,28 @@ function awareness(){
     img3.src="../images/ourwork/img11.jpg";
     text.innerText="Awareness campaigns conducted by Unity Uplift are essential for educating communities and raising awareness about various social, environmental, and health issues. We identify specific issues to address and set clear objectives for our campaigns, aiming to raise awareness, change attitudes and behaviors, mobilize support, or advocate for policy change. We tailor our messages and strategies to effectively reach and engage our target audience, considering demographics such as age, gender, location, and socio-economic status. Unity Uplift organizes various outreach activities, such as community meetings, workshops, health fairs, and media campaigns, to disseminate information and engage the community. We collaborate with local leaders, community organizations, schools, healthcare providers, and government agencies to gain support and involvement in our awareness campaigns. Through monitoring and evaluation, we assess the impact of our campaigns and identify areas for improvement, ensuring that our efforts are accountable and effective in achieving our goals. Ultimately, through our awareness campaigns, Unity Uplift aims to empower individuals, mobilize communities, and create positive change in society.";
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting
+
+        const inputs = form.querySelectorAll('input[type="text"], input[type="email"], input[type="password"]');
+        let isAnyFieldEmpty = false;
+
+        inputs.forEach(function(input) {
+            if (input.value.trim() === '') {
+                isAnyFieldEmpty = true;
+            }
+        });
+
+        if (isAnyFieldEmpty) {
+            // Show the popup or alert
+            alert('All fields are required!');
+        } else {
+            // Submit the form
+            form.submit();
+        }
+    });
+});
