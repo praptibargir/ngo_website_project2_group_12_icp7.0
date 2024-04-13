@@ -71,6 +71,24 @@ function dec(){
   }
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  var verifyButton = document.getElementById('verifyButton');
+  var resultElement = document.getElementById('result');
 
+  verifyButton.addEventListener('click', function () {
+      var num1 = Math.floor(Math.random() * 10);
+      var num2 = Math.floor(Math.random() * 10);
+      var sum = num1 + num2;
 
+      var userInput = prompt('Please solve the following: ' + num1 + ' + ' + num2);
+      if (userInput !== null) {
+          var userAnswer = parseInt(userInput);
+          if (!isNaN(userAnswer) && userAnswer === sum) {
+              resultElement.textContent = 'Verification successful. You are not a robot!';
+          } else {
+              resultElement.textContent = 'Verification failed. Please try again.';
+          }
+      }
+  });
+});
 
