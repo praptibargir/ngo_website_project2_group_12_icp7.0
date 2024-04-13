@@ -98,7 +98,7 @@
   .contact-info img{
     height: 500px;
     width: 500px;
-    filter: blur(3px); 
+    filter: blur(2px); 
     border-radius: 10px;
     object-fit: cover;
   }
