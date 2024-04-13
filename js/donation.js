@@ -1,3 +1,13 @@
+//light and dark theme
+function lightmode() {
+    const theme = document.getElementById("body");
+    theme.className = "theme-light";
+  }
+  
+  function darkmode() {
+    const theme = document.getElementById("body");
+    theme.className = "theme-dark";
+  }
 
 //slider
 let slideIndex = 0;
